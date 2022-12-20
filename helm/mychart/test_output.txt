@@ -34,3 +34,24 @@ metadata:
   name: test-upper-configmap
 data:
   TEST-UPPER-value: "test"
+  
+#### test define object names with parameters in .Values ####
+
+$ helm install test-value ./mychart --dry-run
+NAME: test-value
+LAST DEPLOYED: Tue Dec 20 14:10:15 2022
+NAMESPACE: default
+STATUS: pending-install
+REVISION: 1
+TEST SUITE: None
+HOOKS:
+MANIFEST:
+---
+# Source: mychart/templates/configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: test-values-configmap
+data:
+  TEST-VALUES-value: "test"
+  coffee-value: "test_value"

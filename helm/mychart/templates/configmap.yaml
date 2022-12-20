@@ -4,3 +4,4 @@ metadata:
   name: {{ .Release.Name }}-configmap
 data:
   {{ .Release.Name | upper }}-value: "test"
+  {{ .Values.favorite.drink }}-value: "test_value"
