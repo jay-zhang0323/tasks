@@ -1,0 +1,36 @@
+$ helm install goodly-guppy ./mychart                                                                                                             
+NAME: goodly-guppy
+LAST DEPLOYED: Mon Dec 19 07:22:26 2022
+NAMESPACE: default
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+
+$ helm get manifest goodly-guppy
+---
+# Source: mychart/templates/configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: goodly-guppy-configmap
+data:
+  myvalue: "Hello World"
+  goodly-guppy-value: "test"
+
+$ helm install test-upper ./mychart --dry-run
+NAME: test-upper
+LAST DEPLOYED: Mon Dec 19 13:28:08 2022
+NAMESPACE: default
+STATUS: pending-install
+REVISION: 1
+TEST SUITE: None
+HOOKS:
+MANIFEST:
+---
+# Source: mychart/templates/configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: test-upper-configmap
+data:
+  TEST-UPPER-value: "test"
