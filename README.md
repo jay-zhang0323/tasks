@@ -92,19 +92,40 @@ OhMyTiUP$ sudo curl --unix-socket /var/run/control.unit.sock http://localhost
 ## Docker file
 ```
 OhMyTiUP$ docker pull nginx/unit:1.29.0-jsc11
-OhMyTiUP$ Dockerfile
-FROM nginx/unit:1.29.0-jsc11
+OhMyTiUP$ more Dockerfile
+FROM nginx/unit:1.27.0-jsc11
 
 RUN mkdir -p /opt/www
 
-COPY hello-world-0.0.1-SNAPSHOT.war /opt/www/
+COPY spring-boot-war-example/target/hello-world-0.0.1-SNAPSHOT.war /opt/www/
 
 COPY etc/config.json /docker-entrypoint.d/
 
-expose 8080
+EXPOSE 8080
+
+OhMyTiUP$ more etc/config.json
+{
+    "listeners": {
+        "*:8080": {
+            "pass": "applications/java"
+        }
+    },
+    "applications": {
+        "java": {
+            "user": "unit",
+            "group": "unit",
+            "type": "java",
+            "environment": {
+                "Deployment": "0.0.1"
+            },
+            "classpath": [],
+            "webapp": "/opt/www/hello-world-0.0.1-SNAPSHOT.war"
+        }
+    }
+}
 OhMyTiUP$ docker build . -t test:v0.0.1
 Sending build context to Docker daemon  40.25MB
-Step 1/5 : FROM nginx/unit:1.29.0-jsc11
+Step 1/5 : FROM nginx/unit:1.27.0-jsc11
  ---> 1021f8eeca68
 Step 2/5 : RUN mkdir -p /opt/www
  ---> Using cache
@@ -120,16 +141,10 @@ Step 5/5 : EXPOSE 8080
  ---> 25803ba4dff8
 Successfully built 25803ba4dff8
 Successfully tagged test:v0.0.1
-OhMyTiUP$ docker run -d test:v0.0.1
-docker ps -a 
-CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                    PORTS               NAMES
-89de2ded0966        test:v0.0.1         "/usr/local/bin/dock…"   3 seconds ago       Exited (1) 1 second ago                       hungry_curran
-OhMyTiUP$ docker logs 89de2ded0966
-... ...
-2022/12/20 22:10:08 [alert] 19#19 realpath("/usr/share/unit-jsc-common/") failed (1: Operation not permitted)
-2022/12/20 22:10:08 [notice] 11#11 process 19 exited with code 1
-2022/12/20 22:10:08 [warn] 15#15 failed to start prototype "java"
-2022/12/20 22:10:08 [alert] 15#15 failed to apply new conf
-/usr/local/bin/docker-entrypoint.sh: Error: HTTP response status code is '500'
- }error": "Failed to apply new configuration."
+OhMyTiUP$ docker run -p 8080:8080 -d test:v0.0.1
+OhMyTiUP$ docker ps 
+CONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS              PORTS               NAMES
+003a61e88211        test:v0.0.1         "/usr/local/bin/dock…"   About a minute ago   Up About a minute   8080/tcp            thirsty_kirch
+OhMyTiUP$ curl http://172.82.11.193:8080/
+Hello World!
 ```
