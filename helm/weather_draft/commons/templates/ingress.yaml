@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: {{ include "weather.common.fullname" . }}
+  {{- if .Values.ingress.web.annotations }}
+  annotations:
+    {{- toYaml .Values.ingress.web.annotations | nindent 4 }}
+  {{- end }}
+  labels:
+    app: {{ include "weather.common.labels.app" . }}
+    component: web
+    chart: {{ include "weather.common.labels.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+    {{- if .Values.ingress.web.labels }}
+    {{- toYaml .Values.ingress.web.labels | nindent 4 }}
+    {{- end }}
+

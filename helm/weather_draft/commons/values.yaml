@@ -1,0 +1,82 @@
+###################################
+# Kubernetes - Ingress Configs
+###################################
+ingress:
+  ## if we should deploy Ingress resources
+  ##
+  ## NOTE:
+  ## - if you want to change url prefix for web ui or flower (even if you do not use this Ingress),
+  ##   you can change `web.baseUrl` and `flower.urlPrefix`
+  ##
+  enabled: false
+
+  ## configs for the Ingress of the web Service
+  ##
+  web:
+    ## annotations for the web Ingress
+    ##
+    annotations: {}
+
+    ## additional labels for the web Ingress
+    ##
+    labels: {}
+
+    ## the path for the web Ingress
+    ##
+    ## WARNING:
+    ## - do NOT include the trailing slash (for root, set an empty string)
+    ##
+    ## NOTE:
+    ## - should be compatible with `web.baseUrl` config
+    ##
+    ## EXAMPLE: (if set to "/airflow")
+    ## - UI:     http://example.com/airflow/admin
+    ## - API:    http://example.com/airflow/api
+    ## - HEALTH: http://example.com/airflow/health
+    ##
+    path: ""
+
+    ## the hostname for the web Ingress
+    ##
+    host: ""
+
+    ## the livenessPath for the web Ingress
+    ##
+    ## NOTE:
+    ## - if set to "", defaults to: `{ingress.web.path}/health`
+    ##
+    livenessPath: ""
+
+    ## configs for web Ingress TLS
+    ##
+    tls:
+      ## enable TLS termination for the web Ingress
+      ##
+      enabled: false
+
+      ## the name of a pre-created Secret containing a TLS private key and certificate
+      ##
+      ## NOTE:
+      ## - this MUST be specified if `ingress.web.tls.enabled` is true
+      ##
+      secretName: ""
+
+    ## http paths to add to the web Ingress before the default path
+    ##
+    ## EXAMPLE:
+    ##   precedingPaths:
+    ##     - path: "/*"
+    ##       serviceName: "ssl-redirect"
+    ##       servicePort: "use-annotation"
+    ##
+    precedingPaths: []
+
+    ## http paths to add to the web Ingress after the default path
+    ##
+    ## EXAMPLE:
+    ##   succeedingPaths:
+    ##     - path: "/extra-service"
+    ##       serviceName: "extra-service"
+    ##       servicePort: "use-annotation"
+    ##
+    succeedingPaths: []

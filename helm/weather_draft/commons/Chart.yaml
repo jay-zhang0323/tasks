@@ -1,0 +1,13 @@
+
+apiVersion: v1
+description: Example - sample charts
+name: weather-common
+version: 0.1.0
+appVersion: 0.1.0
+keywords:
+  - weather
+  - common
+  - gke
+sources:
+  - https://github.com/sample/repo
+icon: https://website/weather/icon.png

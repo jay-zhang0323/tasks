@@ -1,0 +1,21 @@
+$ helm install weather-common --dry-run common
+NAME: weather-common
+LAST DEPLOYED: Mon Dec 26 11:36:56 2022
+NAMESPACE: default
+STATUS: pending-install
+REVISION: 1
+TEST SUITE: None
+HOOKS:
+MANIFEST:
+---
+# Source: weather-common/templates/ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: weather-common
+  labels:
+    app: weather-common
+    component: web
+    chart: weather-common-0.1.0
+    release: weather-common
+    heritage: Helm
