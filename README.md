@@ -1,3 +1,5 @@
+# Schedule
+![alt text](./png/gantt.png "WBS")
 # Procedure
 ## Download and compile war
 ```
