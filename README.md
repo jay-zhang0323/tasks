@@ -150,3 +150,23 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 OhMyTiUP$ curl http://172.82.11.193:8080/
 Hello World!
 ```
+
+
+┗4. ベースマニフェストの作成
+┗4.1 構成管理対象成果物
+┗4.2 ベースマニフェストの構成管理
+┗4.3 設定ファイルの適用ルール
+　┗ベースマニフェストのカスタマイズ
+　　┗基本属性
+　　┗image(コンテナイメージ)
+　　┗port
+　　┗liveness Probe
+　　┗rediness Probe
+　　┗startup Probe
+　　┗security context
+　　┗init container
+　　┗service
+　　┗ingress
+　　┗HPA
+　　┗volume
+　　┗その他追加設定
