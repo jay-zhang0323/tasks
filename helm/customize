@@ -1,0 +1,544 @@
+# ベースマニフェストのカスタマイズ要素一覧
+
+## 1.はじめに
+
+### 1.1 本書の目的
+
+本書は、SEJ次世代システム開発におけるコンテナ基盤ガイドラインとして、
+SEJ次世代システムにおけるアプリケーションがベースコンテナ(Dockerfile)、
+ベースマニフェストを利用する手順を理解してもらうための資料である。
+
+### 1.2 本書の位置付け
+
+本書は以下の位置付けのドキュメントである。
+　方針設計
+　　┗　07.インフラアーキ
+　　　　┣　システム構成概要
+　　　　┣　ソフトウェア構成（構成管理）
+　　　　┣　ネットワーク構成
+　　　　┣　可用性
+　　　　┣　拡張性
+　　　　┣　DNS
+　　　　┣　バックアップ・リストア
+　　　　┣　システム監視
+　　　　┣　災害対策
+　　　　┗　コンテナ実行基盤
+　　　　　　┗　ベースマニフェストのカスタマイズ要素一覧　・・・　本書
+### 1.3 本書の記載範囲と利用者
+
+本書では、SEJ次世代システムにおけるベースコンテナ、ベースマニフェストの利用方法について
+記載する。
+本書の利用者
+各ビジネス機能(A01) 各ビジネス機能(B01) 各ビジネス機能(C01) システム機能共通 共通機能 DB-API
+〇 〇 〇 × × 〇
+
+### 1.4 前提知識
+
+本ガイドラインでは、以下の知識を前提とする。
+
+### 1.5 前提資料
+
+## 2.ベースコンテナとベースマニフェストの概要
+
+### 2.1 ベースコンテナとベースマニフェストの構成管理
+
+ベースコンテナ
+Pod内のコンテナ構成するOS、アプリケーションなどを定義するためのDockerfileのこと。
+GitHubアプリケーションリポジトリ上に配置し、Pod内のコンテナを構成するOS・コンテナのロード時　　
+に起動するアプリケーションなどを定義する。
+ベースマニフェスト
+Podの構成を定義するyamlファイルの集合体であり、マニフェストをhelm chart形式で記載したもの。
+本稿は作成中です。記載内容に大きな変更が生じる可能性があります。
+
+Githubチャートリポジトリ上に配置し、Podのデプロイが行われる際の、Podの参照するARリポジト
+リや、Pod自体の仕様、コンテナの仕様などを定義する。
+※　ここに画像を挿入予定
+
+### 2.2 ベースコンテナとベースマニフェストの構成管理方法
+
+  - ベースコンテナの構成イメージ
+ブランクプロジェクトに配置し、アプリケーションの使用するDockerイメージを作成するための要素を定義する。
+Pod起動時にPod内のコンテナとして起動するSpring Bootフレームワークから起動するjarファイルを定義する。
+※　ここに画像を挿入予定
+  - ベースマニフェストの構成イメージ
+BlankProjectのdeloy/deployment.yamlに当たるファイルをGitHubチャートリポジトリに移設し管理する。
+※暫定開発環境ではdeloyのみの定義を行っていたが、保守開発/ステージング/本番環境に向けたhelmに
+よるマニフェスト管理への移行に伴い、チャートリポジトリ用に新たな定義が必要
+GitHubチャートリポジトリで、アプリケーションによる固有定義は、ap-values-[環境].yamlに定義する。
+暫定開発環境のマニフェストの管理
+　暫定開発環境では、BlankProject内の deploy/deployment.yaml で管理していた。
+※　ここに画像を挿入予定
+保守開発環境では、GItHubアプリケーションリポジトリから切り離して、GitHubチャートリポジトリで管理する。
+アプリケーションで定義するマニフェストファイルはap-values-.yamlの名称のファイルとして提供する。
+※　ここに画像を挿入予定
+
+## 3. ベースコンテナの作成
+
+### 3.1 構成管理対象成果物
+
+（以下、使用するversionにより変更可能性あり）
+下記を参考にして、使用するDockerfileを選定する。
+アプリケーションに提供するベースコンテナは、以下の2種類が存在する。
+Cloud SDK(ver)をベースとしたDockerfile
+「コンテナコンポーネント一覧」の「SWスタック」列に「APコンテナ帳票」と記載のあるコンテナが使用する。
+Cloud SDK(ver)をベースとしてDockerfile
+「コンテナコンポーネント一覧」の「SWスタック」列に「APコンテナ帳票」と記載のあるコンテナが使用する。
+※帳票サーバへのPDF作成要求を行うPodについては、SVFのバージョン制約でCloud SDK(ver)を利用する必要があるため
+SWスタック 利用するJava Dockerfileの入手先
+APコンテナ Cloud SDK(ver) sample-application内のDockerfileを利用
+APコンテナ(帳票) Cloud SDK(ver) sample-application内のDockerfileを修正して利用
+
+### 3.2 ベースコンテナの構成管理
+
+ベースコンテナは以下のリポジトリのdeploy/ディレクトリ配下で管理する。
+SWスタック リポジトリ 備考
+APコンテナ (gitのURL)
+APコンテナ(帳票) (gitのURL)
+ベースコンテナの(Dockerfile)は、共通的に必要なパッケージがインストールされたベースイメージを利用する。
+ベースイメージの定義は、GItHubリポジトリ(cas-base-container)で管理され、ビルドしたベースイメージはARに格納して提供する。
+※　ここに画像を挿入予定
+
+### 3.3 ベースコンテナのカスタマイズ
+
+アプリケーションでDockerfileに修正が必要な場合は修正を行う。
+修正については、「コンテナコンポーネント一覧」の「ベースコンテナアプリ固有処理」に記載の内容に従って実施する。
+行 定義
+以下に定義を記述する。
+- APコンテナ(帳票)のカスタマイズ方法
+
+  1. 行目のFROM業のリポジトリ名部分を以下のように修正する。
+
+修正前:
+修正後
+同様に10行目のFROM行も修正する。
+修正前 
+修正後
+※上記修正例は、保守開発環境のアカウントIDになっている。ステージング・本番環境については、環境引き渡し時に補足を記載する。
+
+## 4.ベースマニフェストの作成
+
+### 4.4 ベースマニフェストのカスタマイズ
+
+ap-values-[環境].yamlのカスタマイズ要素一覧を以下に示す。
+
+「共通設定」「環境毎設定」の凡例
+〇 定義必須 必ず定義する項目環境毎設定を定義した場合は
+共通設定(ap-values-com.yaml)は無効となる。
+
+△ 選択定義
+共通設定、環境毎設定のどちらかを定義する。
+両方に記載した場合、共通設定はコメントアウトする必要はなく、環境毎設定が有効となる。
+共通設定を有効にしたい場合、環境毎設定をコメントアウトする。
+全環境同一定義となる場合は、共通設定のみとし環境毎設定はコメントアウトする。
+× 定義不可 -
+空欄 定義不要 -
+
+マニフェス ト種別 概要 デフォルト値 常駐/非常駐 共通設定 環境毎設定 
+Deployment metadata name アプリケーションに付与される名称Pod名とも同様となる ○
+namespace ネームスペース
+labels app
+spec selector
+matchLabe
+ls
+app
+template
+metadata
+labels
+app
+spec
+serviceAcvountN
+ame
+○
+initContainers name ○
+command ○
+image ○
+imagePullPolicy ○
+volumeMounts
+mountPath
+name
+containers
+name ○
+image ○
+tag ○
+imagePullPolicy ○
+securityContext readOnlyRootFil
+esystem
+読み取り専用有効化フラ
+グ
+○
+Ports ○
+containerPort コンテナの待ち受けポー
+ト番号
+○
+resources ○
+limits ○
+cpu 起動時のCPU ○
+memory メモリの制限 ○
+requests cpu 起動時のCPU ○
+memory メモリの制限 ○
+redinessProbe httpGet path ○
+port ○
+scheme ○
+periodSeconds 調査開始間隔（回数） ○
+successThresho
+ld
+○
+timeoutSeconds タイムアウト間隔(秒) ○
+envFrom ○
+volumeMount mountPath
+name
+readonly
+volumes
+name
+emptyDir
+secret defaultMode
+items key
+path
+secretName
+Service
+Ingress
+ConfigMap
+ExternalSecret
+　　　　　　　　　　　　
+「常駐/非常駐」の凡例
+A 常駐型でのみ使用する項目
+C 非常駐型でのみ使用する項目
+AC 常駐型、非常駐型ともに使用する項目
+カスタマイ
+ズ①
+カスタマ
+イズ②
+カスタマ
+イズ③
+概要 デ
+フォ
+ルト
+値
+共
+通
+設
+定
+環境
+毎設
+定
+常駐/
+非常
+駐
+name アプリケーションに付与される
+名称
+Podメイトも同様となる
+〇 × AC 1
+apversion アプリケーションのバージョン △ △ AC 不要
+namespace ネームスペース × 〇 AC 1
+NEC Corporation Page 5
+replicaCount Podの起動数 1 △ △ A 不要
+image アプリケーションのコンテナイ
+メージ
+× 〇 AC 2
+^ repository 起動するコンテナイメージのAR
+リポジトリのリポジトリ名
+× 〇 AC 2
+^ tag ARリポジトリのタグ名
+アプリケーションソースリポジ
+トリのCIにより書き換えられる
+× 〇 AC 2
+ports ポート番号 A 1
+^ containerPort コンテナの待ち受けポート番号 8080 〇 × A 1
+livenessProbe Pod死活監視定義 A 2
+^ failureThreshold 調査開始間隔（秒） 3 △ △ A 2
+^ periodSeconds 調査開始間隔（回数） 10 △ △ A 2
+readinessProbe Pod読み取り監視定義 A 2
+^ timeoutSeconds タイムアウト間隔(秒) 1 △ △ A 2
+^ successThreshold 最小連続成功数 1 △ △ A 2
+^ failureThreshold 調査開始間隔（秒） 3 △ △ A 2
+^ periodSeconds 調査開始間隔（回数） 10 △ △ A 2
+startupProbe Pod読み取り管理遅延定義 A 2
+^ failureThreshold 調査開始間隔（秒） 3 △ △ A 2
+^ periodSeconds 調査開始間隔（回数） 10 △ △ A 2
+resources リソース定義 AC 2
+^ limits リソース制限 AC 2
+^ ^ cpu 起動時のCPU 0.25 △ △ AC 2
+^ ^ memory メモリの制限 0.5G △ △ AC 2
+^ requests 要求 AC 2
+^ ^ cpu 起動時のCPU 0.25 △ △ AC 2
+^ ^ memory メモリの制限 0.5G △ △ AC 2
+SecurityContext 権限付与とアクセス制御 △ △ A 2
+^ runAsUser コンテナプロセスUID △ △ A 2
+^ runAsGroup コンテナGID △ △ A 2
+^ fsGroup ボリュームのファイルシステム
+GID
+△ △ A 2
+^ fsGroupChangeP
+olicy
+ボリュームの所有権と権限を変
+更
+△ △ A 2
+^ runAsNonRoot rootユーザーでの実行のブロッ
+ク
+△ △ AC 2
+^ seLinuxOptions SELinuxの割り当て AC 2
+^ ^ level SELinuxレベルの定義 AC 2
+^ privileged 特権モード有効化フラグ false △ △ AC 2
+^ readOnlyRootFile
+system
+読み取り専用有効化フラグ false AC 1
+^ allowPrivilegeEsc
+alation
+権限昇格有効化フラグ △ △ AC 2
+^ Capablities Capability △ △ AC 2
+initContainers コンテナ初期化処理 AC 1
+^ command コマンド指定 AC 1
+service Service定義 A 1
+^ spec type 外部IPアドレスのタイプ ClusterIP △ △ A 1
+^ selector セレクタ A 1
+^ ^ app App △ △ A 1
+^ ports ポートの定義 A 1
+^ ^ protocol プロトコル △ △ A 1
+^ ^ port ポート番号 △ △ A 1
+^ ^ targetPort ターゲットポート △ △ A 1
+NEC Corporation Page 6
+^ ^ name 名前 A 1
+^ name 名前 A 1
+ingress ingressの定義 A
+^ create Ingressを作成する/しないを
+true/falseで定義
+false 〇 × A
+^ path アクセスパス 〇 × A
+^ pathtype パスのタイプ 〇 × A
+^ backend バックエンド 〇 × A
+HorizontalPodAutosca
+ler
+Pod数自動スケール定義 △ AC
+^ scaleTargetRef オートスケールターゲット △ AC
+^ minReplicas 最小レプリカ △ AC
+^ maxReplicas 最大レプリカ △ AC
+^ targetCPUUtilizati
+onPercentage
+Podの平均CPU使用率の目標値 △ AC
+^ metrics メトリクス △ AC
+^ ^ type メトリクスの種類 △ AC
+volume ボリューム定義 △ △ AC
+^ containers コンテナ △ △ AC
+^ ^ volumeMounts マウント対象ボリューム △ △ AC
+^ volumes ボリューム △ △ AC
+4.4.1 基本属性
+Podの基本属性として設定する項目を定義する。
+4.4.1.1 name(名前)
+アプリケーション名を定義する。
+共通項目定義のみ。
+「コンテナコンポーネント一覧」より「コンテナID」欄の記載内容を定義する。すべて小文字とし、アンダーバーはハイフンに変更する。
+例:casp-a101001-01
+アプリケーション名はコンテナ名、Pod名としても使用される。
+4.4.1.2 apversion(アプリバージョン)
+アプリケーションのバージョンを定義する。
+本番/ステージング/保守開発環境で異なる定義を行いたい場合は、それぞれ定義する。
+バージョン名については、アプリケーション開発のガイドラインに従うものとする。
+非常駐Podの場合、Pod起動シェルで実行単位の識別番号に置き換えられる。
+4.4.1.3 namespace(ネームスペース)
+デプロイ先のネームスペースを定義する。
+本番/ステージング/保守開発環境で異なる定義を行いたい場合は、それぞれ定義する。
+非常駐Podの場合、Cloud Composerジョブ定義のパラメータでデプロイ先のネームスペースを設定することで、本定義が上書きされる。
+※Cloud Composerのジョブ定義については「ジョブ作成手順」を参照
+4.4.1.4 replicaCount(起動Pod数)
+起動するPod数を定義する。
+非常駐Podでは定義不可。
+本番/ステージング/保守開発環境で異なる定義を行いたい場合は、それぞれ定義する
+本定義に合わせて、Pod数が維持される。
+NEC Corporation Page 7
+※Podに障害が発生しダウンした場合でも、GKEのオートヒーリング機能により本定義のPod数を維持するように起動数が確保される。
+4.4.2 image(コンテナイメージ)
+アプリケーションのコンテナイメージを定義する。
+4.4.2.1 repository(イメージリポジトリ)
+起動するコンテナイメージが格納されているGKEリポジトリを定義する。コンテナID配下を定義する。例:casp-a101001_01
+4.4.2.2 tag(タグ)
+起動するコンテナイメージのイメージタグ名を定義する。
+アプリケーションソースコードのリポジトリでCIが動くと、
+ECRへのイメージプッシュした後にプッシュしたイメージタグ名で書き換えられ、
+PullRequestが発行される。
+4.4.3 ports(ポート)
+コンテナで利用するポートを定義する。
+4.4.3.1 containerPort(コンテナの待ち受けポート番号)
+コンテナの待ち受けるリッスンポート番号を定義する。
+4.4.4 livebessProbe(Pod死活監視)
+Podの死活監視の間隔(秒)と回数を定義する。
+※設定するPod上の/health/livenessを定期的に監視するための定義。
+　ここで定義した調査間隔(秒)×回数分の死活監視を行い、その間にPodを非活性を検知した場合、Podの再 　　　起動を行う。
+4.4.4.1 filureThreshold(調査間隔(秒))
+本番/ステージング/保守開発環境で異なる定義を行いたい場合は、それぞれ定義する。
+4.4.4.2 periodSecond(調査回数)
+本番/ステージング/保守開発環境で異なる定義を行いたい場合は、それぞれ定義する。
+4.4.5 readinessProbe(Pod読み取り監視)
+Podの読み取り監視の間隔(秒)と回数を定義する。
+※ここで定義した調査間隔(秒)×回数分のPod読み取り監視を行い、
+　その間にPodの読み取りが負荷であった場合、Cloud Load Balancingにて
+　当Podへの通信を閉塞し遮断する。
+4.4.5.1 timeoutSeconds(タイムアウト間隔(秒))
+タイムアウトになるまでの秒数。
+本番/ステージング/保守開発環境で異なる定義を行いたい場合は、それぞれ定義する。
+4.4.5.2 successThreshold(最小連続成功数)
+一度Probeが失敗した後、次のProbeが成功したとみなされるための最小連続成功数。
+本番/ステージング/保守開発環境で異なる定義を行いたい場合は、それぞれ定義する。
+4.4.5.3 failureThreshold(調査間隔(秒))
+Probeが失敗した場合、設定した回数までProbeを試行する。
+本番/ステージング/保守開発環境で異なる定義を行いたい場合は、それぞれ定義する。
+NEC Corporation Page 8
+4.4.5.4 periodSeconds(調査回数)
+Probeが実行される頻度(秒数)。
+本番/ステージング/保守開発環境で異なる定義を行いたい場合は、それぞれ定義する。
+4.4.6 startupProbe(Pod読み取り監視開始遅延)
+readinessProbeの読み取りを開始する遅延時間を定義する。
+※Podが起動してから、調査間隔(秒)×回数分の遅延時間を待ったのち、
+　readinessProbe(Pod読み取り監視)を開始する。
+　Podが起動してから遅延時間までの間に読み取り不可だった場合にも、
+　Cloud Load Balancingによる通信閉塞は行わない。
+4.4.6.1 failureThreshold(調査間隔(秒))
+Probeが失敗した場合、設定した回数までProbeを試行する。
+本番/ステージング/保守開発環境で異なる定義を行いたい場合は、それぞれ定義する。
+4.4.6.2 periodSeconds(調査回数)
+Probeが実行される頻度(秒数)。
+本番/ステージング/保守開発環境で異なる定義を行いたい場合は、それぞれ定義する。
+4.4.7 resources(リソース)
+CPUとメモリの制限(リソース制限)と要求(開始所の要求リソース)を定義する。
+4.4.7.1 limits(制限)
+リソース制限を定義する。
+4.4.7.1.1 cpu(CPU)
+本番/ステージング/保守開発環境で異なる定義を行いたい場合は、それぞれ定義する。
+保守開発環境は、本番環境の10%のリソースとするため、0.25をデフォルト定義とする。
+[0.25,0.5,1,2,4]のいずれかの数(個数)を定義する。
+4.4.7.1.2 memory(メモリ)
+本番/ステージング/保守開発環境で異なる定義を行いたい場合は、それぞれ定義する。
+保守開発環境は、本番環境の10%のリソースとするため、0.5Gをデフォルト定義とする。
+Fargateで実行されているPodで使用可能なvCPUとメモリの組み合わせには制限があるため、
+CPUの設定値に合わせて以下の組み合わせから選択すること。
+vCPU値 メモリの値
+0.25 0.5GB、1GB、2GB
+0.5 1GB、2GB、3GB、4GB
+1 2GB、3GB、4GB、5GB、6GB、7GB、8GB
+2 4GB～16GB(1GBのインクリメント)
+4 8GB～30GB(1GBのインクリメント)
+4.4.7.2 requests(要求)
+開始時の要求リソースを定義する。
+4.4.7.2.1 cpu(CPU)
+本番/ステージング/保守開発環境で異なる定義を行いたい場合は、それぞれ定義する。
+保守開発環境は、本番環境の10%のリソースとするため、0.25をデフォルト定義とする。
+NEC Corporation Page 9
+[0.25,0.5,1,2,4]のいずれかの数(個数)を定義する。
+4.4.7.2.2 memory(メモリ)
+本番/ステージング/保守開発環境で異なる定義を行いたい場合は、それぞれ定義する。
+保守開発環境は、本番環境の10%のリソースとするため、0.5Gをデフォルト定義とする。
+Fargateで実行されているPodで使用可能なvCPUとメモリの組み合わせには制限がある。
+4.4.8 SecurityContext(権限付与とアクセス制御)
+Podまたはコンテナに権限やアクセス制御の設定を定義する。
+DACによる権限制御。
+SELinuxのコンテキストの適用
+特権モードの設定
+Capabilityの付与
+特権昇格の有無
+4.4.8.1 runAsUser(コンテナプロセスUID)
+コンテナのプロセスのUIDを定義する。
+指定がない場合、コンテナイメージが使用される。
+4.4.8.2 runAsGroup(コンテナGID)
+コンテナのプロセスのGIDを定義する。
+指定がない場合、実行時のデフォルトが使用される。
+4.4.8.3 fsGroup(ボリュームのファイルシステムGID)
+マウントされたボリュームのファイルシステムのGIDを定義する。
+4.4.8.4 fsGroupChangePolicy (ボリュームの所有権と権限を変更)
+Pod 内で公開される前に、ボリュームの所有権と権限を変更するための動作を定義する。
+4.4.8.5 runAsNonRoot(rootユーザーでの実行のブロック)
+rootユーザーでプロセス実行のブロックを定義する。
+4.4.8.6 seLinuxOptions(SELinuxの割り当て)
+コンテナにSELinuxラベルを割り当てを定義する。
+4.4.8.6.1 level(SELinuxレベルの定義)
+SELinuxのレベルを定義する。
+4.4.8.7 privileged(特権モード有効化フラグ)
+コンテナを特権モードで実行する場合は、trueを設定する。
+4.4.8.8 allowPrivilegeEscalation(権限昇格有効化フラグ)
+権限昇格の定義を有効化する場合は、trueを設定する。
+特権モードで実行されていて CAP_SYS_ADMINのCapabilityをもつ場合、このパラメータは常にTrueとなる。
+4.4.8.9 readOnlyRootFilesystem(読み取り専用有効化フラグ)
+コンテナのルートファイルシステムを読み取り専用にする場合に、trueを設定する。
+4.4.8.10 Capablities(Capability)
+NEC Corporation Page 10
+Linux Capabilityの追加を定義する。
+4.4.8.10.1 add(Capabilityの追加)
+追加するCapabilityの定義をする。
+4.4.9 initContainers(コンテナ初期化処理)
+Pod内でアプリケーションコンテナの前に実行される初期化コンテナを1つ以上定義する。
+4.4.9.1 command(コマンド指定)
+実行するシェルコマンドを定義する。
+4.4.10 service(Service定義)
+Podの集合で実行されているアプリケーションをネットワークサービスとして公開する。
+4.4.10.1 type(外部IPアドレスのタイプ)
+外部IPアドレスの公開のタイプ
+4.4.10.2 selector(セレクタ)
+セレクタを定義する。
+4.4.10.2.1 app(App)
+ラベルの定義をする。
+4.4.10.2.2 ports(ポートの定義)
+ポートの定義をする。
+4.4.10.2.3 protocol(プロトコル)
+プロトコルを定義する。
+4.4.10.2.4 port(ポート番号)
+serviceで使用するポート番号を定義する。
+4.4.10.2.5 targetPort(ターゲットポート)
+Podで使用するポート番号を定義する。
+4.4.11 ingress(ingress定義)
+クラスター内のServiceに対する外部からのアクセス(主にHTTP)を管理する。
+4.4.11.1 create(有効化フラグ)
+Ingreassを作成する際にtrueを設定する。
+4.4.11.2 path(アクセスパス)
+Podへアクセスする際のパスを定義する。
+4.4.11.3 pathtype(パスタイプ)
+パスタイプは以下のいずれかを定義する。
+NEC Corporation Page 11
+ImplementationsSpecific
+このパスタイプでは、パスとの一致はIngressClassに依存する。
+Ingressの実装はこれを独立したpathtypeと扱うことも、
+PrefilxやExactと同一のパスタイプと扱うこともできる。
+Exact
+大文字小文字を区別して完全に一致するURLパスと一致する。
+Prefix
+パスへのマッチング判定は前方一致で行われる。
+4.4.11.4 backend(バックエンド)
+バックエンドは以下のいずれかを定義する。
+デフォルトバックエンド
+ルールが設定されていないIngressは、全てのトラフィックを単一のデフォルトのバックエンドに
+転送される。
+リソースバックエンド
+ResourceバックエンドはIngressオブジェクトと同じnamespaceにある
+他のKubernetesリソースを指すObjectRef。
+4.4.12 HorizontalPodAutoscaler(Pod数自動スケール定義)
+Pod数をCPU使用率に基づいて自動的にスケールする。
+4.4.12.1 scaleTargetRef(オートスケールターゲット)
+オートスケールさせるターゲットを定義する。
+4.4.12.2 minReplicas(最小レプリカ)
+最小レプリカを定義する。
+4.4.12.3 maxReplicas(最大レプリカ)
+最大レプリカを定義する。
+4.4.12.4 targetCPUUtilizationPercentage(Podの平均CPU使用率の目標値)
+すべてのPodの平均CPU使用率の目標値(％の値)を定義する。
+4.4.12.5 metrics(メトリクス)
+メトリクスを定義する。
+4.4.12.5.1 type(メトリクスの種類)
+メトリクスの種類を以下のいずれかで定義する。
+Resource
+Resourceのメトリクスを定義する。
+例:Resource Requests, Resource Limits
+Pods
+Podのメトリクスを定義する。
+例:Queries Per Second(QPS) 、message broker’s queue、コネクションの数
+Object
+Podとは直接関係ないメトリックスを定義する。
+例:IngressのHit/sやlatency
+External
+Kubernetes外のメトリックスを定義する。
+例:LBのQPS、Cloud Pus/Subの溜まっているメッセージ数
+4.4.13 volume(ボリューム定義)
+ひとまとまりの記憶領域を定義する。
+4.4.13.1 containers(コンテナ)
+NEC Corporation Page 12
+コンテナを定義する。
+4.4.13.1.1 volumeMounts(マウント対象ボリューム)
+マウントの対象ボリュームを定義する。
+4.4.13.2 volumes(ボリューム)
+ボリュームを定義する。
