@@ -13,6 +13,12 @@ https://cloud.google.com/apigee/docs/hybrid/v1.8/scale-and-autoscale#configure-l
 https://cloud.google.com/kubernetes-engine/docs/concepts/cluster-autoscaler#autoscaling_limits
 https://cloud.google.com/kubernetes-engine/docs/concepts/horizontalpodautoscaler
 
+## Confluent
+https://www.confluent.io/blog/project-metamorphosis-elastic-kafka-clusters-in-confluent-cloud/
+https://www.confluent.io/blog/elastically-auto-scaling-confluent-on-kubernetes/
+https://docs.confluent.io/operator/current/co-scale-cluster.html#manually-scale-down-ak-cluster
+https://docs.confluent.io/cloud/current/clusters/cluster-types.html#ccloud-features-and-limits-by-cluster-type
+
 # helm standard
 ┗4. ベースマニフェストの作成
 ┗4.1 構成管理対象成果物
