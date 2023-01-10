@@ -90,7 +90,7 @@ manifest-batch-blank-projectリポジトリの構成は以下の通り。</BR>
 - マニフェストリポジトリをベアクローンして利用し、 `ap-values-[環境].yaml` にアプリケーションで必要な値の定義を行う。</BR>
 
 
-<img src="./img_42.jpg" width=100%>
+<img src="images/dev-flow.png" width=100%>
 
 
 ### 4.3 設定ファイルの適用ルール
