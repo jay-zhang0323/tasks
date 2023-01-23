@@ -16,6 +16,8 @@ RUN touch /var/run/nginx.pid && \
 
 USER nginx
 
+EXPOSE 80
+
 ENV TZ="Asia/Tokyo"
 
 CMD ["nginx", "-g", "daemon off;"]
