@@ -2,9 +2,9 @@
 The read only mode can only be used for in the docker, not in the image mode
 
 # risk
-名前	有効な重大度 	CVSS	使用可能な修正	パッケージ	パッケージ タイプ	
-CVE-2022-32221 	 重大	9.8	–	curl	OS	表示
-CVE-2022-3970 	 高	8.8	–	tiff	OS	表示
+1. 名前	有効な重大度 	CVSS	使用可能な修正	パッケージ	パッケージ タイプ	
+2. CVE-2022-32221 	 重大	9.8	–	curl	OS	表示
+3. CVE-2022-3970 	 高	8.8	–	tiff	OS	表示
 CVE-2022-2097 	 中	5	–	openssl	OS	表示
 CVE-2022-3570 	 中	5.5	–	tiff	OS	表示
 CVE-2022-3597 	 中	6.5	–	tiff	OS	表示
