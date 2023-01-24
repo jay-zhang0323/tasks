@@ -2,7 +2,7 @@ From nginx:1.23.3
 
 RUN mkdir /var/www
 
-COPY www/hello-world.html /var/www
+COPY www/* /var/www/
 
 COPY etc/default.conf /etc/nginx/conf.d/
 COPY etc/nginx.conf /etc/nginx/nginx.conf
