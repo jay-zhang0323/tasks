@@ -2,6 +2,10 @@
 ## Reference
 https://cloud.google.com/architecture/using-distributed-tracing-to-observe-microservice-latency-with-opencensus-and-stackdriver-trace
 
+## Example
+https://github.com/open-telemetry/opentelemetry-java-docs/tree/main/http/src/main/java/io/opentelemetry/example/http
+https://www.aspecto.io/blog/getting-started-with-opentelemetry-java/#Hello-World:-OpenTelemetry-Java
+https://codelabs.developers.google.com/codelabs/cloud-spring-cloud-gcp-trace#0
 
 # Requirement from tanaka
 トレーシングを検証するための環境として、
