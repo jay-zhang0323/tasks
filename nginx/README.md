@@ -98,3 +98,17 @@ CVE-2022-3715 	 低	0	–	bash	OS	表示
 CVE-2022-3821 	 低	5.5	–	systemd	OS	表示
 CVE-2022-43552 	 不明	0	–	curl	OS	表示
 CVE-2022-4415 	 不明	0	–	systemd	OS	表示
+
+# tiff
+https://pkgs.org/search/?q=libtiff 
+
+## upgrade
+apt update -y
+apt install -y make g++
+curl -L  https://download.osgeo.org/libtiff/tiff-4.5.0.tar.gz > tiff-4.5.0.tar.gz
+tar xvf tiff-4.5.0.tar.gz
+cd tiff-4.5.0
+configure
+make
+apt remove -y libtiff5
+make install
