@@ -32,6 +32,17 @@ RUN apt update -y && \
          apt autoremove -y && \
          cd .. && rm -rf tiff-4.5.0.tar.gz tiff-4.5.0
 
+RUN curl  https://www.openssl.org/source/openssl-1.1.1g.tar.gz > openssl-1.1.1g.tar.gz && \
+         tar -zxf openssl-1.1.1g.tar.gz && cd openssl-1.1.1g && \
+         apt install -y libdata-compare-perl cmake && \
+         ./config --prefix=/usr/local/ --openssldir=/usr/local/openssl && \
+         make && \
+         apt remove -y openssl && \
+         make install && \
+         apt remove -y cmake libdata-compare-perl && \
+         apt autoremove -y && \
+         cd .. && rm -rf openssl-1.1.1g
+
 USER nginx
 
 EXPOSE 80
