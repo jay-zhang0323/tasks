@@ -1,0 +1,28 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: scaling
+spec:
+  schedule: "10 11 * * *"
+  concurrencyPolicy: Allow
+  startingDeadlineSeconds: 500
+  suspend: false
+  successfulJobsHistoryLimit: 3
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: hello
+            image: gcr.io/sej-step05-sandbox/job:latest
+            command: ["/opt/scale.sh", "3"]
+            volumeMounts:
+              - mountPath: "/var/my-app"
+                name: ssh-key
+                readOnly: true
+          restartPolicy: OnFailure
+          volumes:
+            - name: ssh-key
+              secret:
+                secretName: gke-serviceaccount
