@@ -1,4 +1,4 @@
-#!/bash/bin
+#!/bin/bash
 
 gcloud auth activate-service-account --key-file /var/my-app/someJsonKey
 gcloud config set project sej-step05-sandbox
