@@ -18,3 +18,9 @@ Please check the cronjob.yaml
 
 # Use below command to check result
 gcloud container node-pools describe default-pool --zone us-central1-c --cluster trace-demo-cluster
+
+
+## Todo
+gcloud components install kubectl google-cloud-sdk-gke-gcloud-auth-plugin
+gcloud config set project sej-step05-sandbox
+gcloud container clusters get-credentials trace-demo-cluster --region us-central1-c
