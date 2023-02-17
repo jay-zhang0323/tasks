@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    cloud.google.com/neg: '{"ingress":true}'
+  creationTimestamp: "2023-01-26T03:50:46Z"
+  finalizers:
+  - service.kubernetes.io/load-balancer-cleanup
+  labels:
+    app: trace-demo-service-a
+  name: trace-demo-service-a
+  namespace: default
+  resourceVersion: "5068632"
+  uid: e94c969a-703f-425d-80de-0e1c45a3eb59
+spec:
+  allocateLoadBalancerNodePorts: true
+  clusterIP: 10.8.1.35
+  clusterIPs:
+  - 10.8.1.35
+  externalTrafficPolicy: Cluster
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - name: 8080-8080
+    nodePort: 31917
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: trace-demo-service-a
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer:
+    ingress:
+    - ip: 34.146.42.132
