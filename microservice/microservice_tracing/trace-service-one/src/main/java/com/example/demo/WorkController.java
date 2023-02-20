@@ -15,6 +15,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import com.google.cloud.ServiceOptions;
 
 import java.util.Random;
 
@@ -22,7 +26,12 @@ import java.util.Random;
 @Slf4j
 public class WorkController {
 
-  private static final Log LOGGER = LogFactory.getLog(WorkController.class);
+  //logback logger
+  //private static final Log LOGGER = LogFactory.getLog(WorkController.class);
+
+  //log4j logger
+  private static final Logger LOGGER = LogManager.getLogger(WorkController.class);
+
 
   @Value("#{environment.TRACING_DEMO_SERVICE_HOST}")
   String someValue;
@@ -31,6 +40,8 @@ public class WorkController {
   private Environment env;
   
   Random r = new Random();
+
+  String projectId = ServiceOptions.getDefaultProjectId();
 
   @Autowired
   RestTemplate restTemplate;
