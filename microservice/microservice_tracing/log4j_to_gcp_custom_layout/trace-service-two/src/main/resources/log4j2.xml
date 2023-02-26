@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration debug="true" status="WARN" monitorInterval="30">  
+    <Properties>
+        <Property name="LOG_PATTERN">
+            %d{yyyy-MM-dd HH:mm:ss.SSS} %5p ${hostName} --- [%15.15t] %-40.40c{1.} : %m%n%ex
+        </Property>
+    </Properties>
+
+    <Appenders>
+    <!--
+        <Console name="ConsoleJSONAppender" target="SYSTEM_OUT" follow="true">
+             
+            <JSONLayout compact="true" eventEol="true" properties="true" stacktraceAsString="true" includeTimeMillis="true" objectMessageAsJsonObject="true">
+                <KeyValuePair key="addtionalField" value="demo-test" />
+                <KeyValuePair key="project" value="${ctx:ProjectId}"/>
+                <KeyValuePair key="parent" value="$${ctx:X-B3-ParentSpanId}" />
+                <KeyValuePair key="spanId" value="$${ctx:X-B3-SpanId}" />
+                <KeyValuePair key="logging.googleapis.com/trace" value="${ctx:X-B3-TraceId}" />
+            </JSONLayout>
+            
+        </Console>
+    -->
+
+        <Console name="CustomGCPAppender">
+            <CustomGCPLayout />
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="CUSTOM_GCP_LOGGER" level="debug" additivity="false">
+            <AppenderRef ref="CustomGCPAppender" />
+        </Logger>
+
+        <Root level="info">
+            <AppenderRef ref="CustomGCPAppender" />
+        </Root>
+    </Loggers>
+</Configuration>

@@ -1,0 +1,924 @@
+Apache Maven 3.8.6 (84538c9988a25aec085021c365c560670ad80f63)
+Maven home: /home/longz/.m2/wrapper/dists/apache-maven-3.8.6-bin/1ks0nkde5v1pk9vtc31i9d0lcd/apache-maven-3.8.6
+Java version: 17.0.6, vendor: Debian, runtime: /usr/lib/jvm/java-17-openjdk-amd64
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "5.15.65+", arch: "amd64", family: "unix"
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: javax.annotation.* < plexus.core
+[DEBUG]   Imported: javax.annotation.security.* < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.fusesource.jansi.* < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: org.slf4j.event.* < plexus.core
+[DEBUG]   Imported: org.slf4j.helpers.* < plexus.core
+[DEBUG]   Imported: org.slf4j.spi.* < plexus.core
+[DEBUG] Populating class realm maven.api
+[INFO] Error stacktraces are turned on.
+[DEBUG] Message scheme: color
+[DEBUG] Message styles: debug info warning error success failure strong mojo project
+[DEBUG] Reading global settings from /home/longz/.m2/wrapper/dists/apache-maven-3.8.6-bin/1ks0nkde5v1pk9vtc31i9d0lcd/apache-maven-3.8.6/conf/settings.xml
+[DEBUG] Reading user settings from /home/longz/.m2/settings.xml
+[DEBUG] Reading global toolchains from /home/longz/.m2/wrapper/dists/apache-maven-3.8.6-bin/1ks0nkde5v1pk9vtc31i9d0lcd/apache-maven-3.8.6/conf/toolchains.xml
+[DEBUG] Reading user toolchains from /home/longz/.m2/toolchains.xml
+[DEBUG] Using local repository at /home/longz/.m2/repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /home/longz/.m2/repository
+[INFO] Scanning for projects...
+[DEBUG] Extension realms for project com.example:demo:jar:0.0.1-SNAPSHOT: (none)
+[DEBUG] Looking up lifecycle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project org.springframework.boot:spring-boot-starter-parent:pom:2.7.6: (none)
+[DEBUG] Looking up lifecycle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[DEBUG] Extension realms for project org.springframework.boot:spring-boot-dependencies:pom:2.7.6: (none)
+[DEBUG] Looking up lifecycle mappings for packaging pom from ClassRealm[plexus.core, parent: null]
+[DEBUG] Resolving plugin prefix spring-boot from [org.apache.maven.plugins, org.codehaus.mojo]
+[DEBUG] Resolved plugin prefix spring-boot to org.springframework.boot:spring-boot-maven-plugin from POM com.example:demo:jar:0.0.1-SNAPSHOT
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: com.example:demo:jar:0.0.1-SNAPSHOT
+[DEBUG] Tasks:   [spring-boot:run]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] --------------------------< com.example:demo >--------------------------
+[INFO] Building demo 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[DEBUG] Resolving plugin prefix spring-boot from [org.apache.maven.plugins, org.codehaus.mojo]
+[DEBUG] Resolved plugin prefix spring-boot to org.springframework.boot:spring-boot-maven-plugin from POM com.example:demo:jar:0.0.1-SNAPSHOT
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       com.example:demo:0.0.1-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [test]
+[DEBUG] Repositories (dependencies): [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] --- init fork of com.example:demo:0.0.1-SNAPSHOT for org.springframework.boot:spring-boot-maven-plugin:2.7.6:run (default-cli) ---
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile, test]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.2.0:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <buildFilters default-value="${project.build.filters}"/>
+  <delimiters>
+    <delimiter>@</delimiter>
+  </delimiters>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <escapeWindowsPaths default-value="true"/>
+  <fileNameFiltering default-value="false"/>
+  <includeEmptyDirs default-value="false"/>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false"/>
+  <project default-value="${project}"/>
+  <propertiesEncoding>UTF-8</propertiesEncoding>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.resources.skip}</skip>
+  <supportMultiLineFiltering default-value="false"/>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true">false</useDefaultDelimiters>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.10.1:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <compilePath default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <createMissingPackageInfoClass default-value="true">${maven.compiler.createMissingPackageInfoClass}</createMissingPackageInfoClass>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debugFileName default-value="javac"/>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <enablePreview default-value="false">${maven.compiler.enablePreview}</enablePreview>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <parameters default-value="false">true</parameters>
+  <project default-value="${project}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <release>${maven.compiler.release}</release>
+  <session default-value="${session}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.7">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.7">${maven.compiler.target}</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:3.2.0:testResources (default-testResources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addDefaultExcludes default-value="true"/>
+  <buildFilters default-value="${project.build.filters}"/>
+  <delimiters>
+    <delimiter>@</delimiter>
+  </delimiters>
+  <encoding default-value="${project.build.sourceEncoding}"/>
+  <escapeWindowsPaths default-value="true"/>
+  <fileNameFiltering default-value="false"/>
+  <includeEmptyDirs default-value="false"/>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <overwrite default-value="false"/>
+  <project default-value="${project}"/>
+  <propertiesEncoding>UTF-8</propertiesEncoding>
+  <resources default-value="${project.testResources}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <supportMultiLineFiltering default-value="false"/>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true">false</useDefaultDelimiters>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.10.1:testCompile (default-testCompile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <compileSourceRoots default-value="${project.testCompileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <createMissingPackageInfoClass default-value="true">${maven.compiler.createMissingPackageInfoClass}</createMissingPackageInfoClass>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debugFileName default-value="javac-test"/>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <enablePreview default-value="false">${maven.compiler.enablePreview}</enablePreview>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <failOnWarning default-value="false">${maven.compiler.failOnWarning}</failOnWarning>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedTestSourcesDirectory default-value="${project.build.directory}/generated-test-sources/test-annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <parameters default-value="false">true</parameters>
+  <project default-value="${project}"/>
+  <release>${maven.compiler.release}</release>
+  <session default-value="${session}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skip>${maven.test.skip}</skip>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.7">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.7">${maven.compiler.target}</target>
+  <testPath default-value="${project.testClasspathElements}"/>
+  <testRelease>${maven.compiler.testRelease}</testRelease>
+  <testSource>${maven.compiler.testSource}</testSource>
+  <testTarget>${maven.compiler.testTarget}</testTarget>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] --- exit fork of com.example:demo:0.0.1-SNAPSHOT for org.springframework.boot:spring-boot-maven-plugin:2.7.6:run (default-cli) ---
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.springframework.boot:spring-boot-maven-plugin:2.7.6:run (default-cli)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <addResources default-value="false">${spring-boot.run.addResources}</addResources>
+  <agents>${spring-boot.run.agents}</agents>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <commandlineArguments>${spring-boot.run.arguments}</commandlineArguments>
+  <directories>${spring-boot.run.directories}</directories>
+  <excludeGroupIds default-value="">${spring-boot.excludeGroupIds}</excludeGroupIds>
+  <excludes>
+    <exclude>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+    </exclude>${spring-boot.excludes}</excludes>
+  <fork default-value="true">${spring-boot.run.fork}</fork>
+  <includes>${spring-boot.includes}</includes>
+  <jvmArguments>${spring-boot.run.jvmArguments}</jvmArguments>
+  <mainClass>${start-class}</mainClass>
+  <noverify>${spring-boot.run.noverify}</noverify>
+  <optimizedLaunch default-value="true">${spring-boot.run.optimizedLaunch}</optimizedLaunch>
+  <profiles>${spring-boot.run.profiles}</profiles>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+  <skip default-value="false">${spring-boot.run.skip}</skip>
+  <useTestClasspath default-value="false">${spring-boot.run.useTestClasspath}</useTestClasspath>
+  <workingDirectory>${spring-boot.run.workingDirectory}</workingDirectory>
+</configuration>
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:2.7.6:run (default-cli) > test-compile @ demo >>>
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for apache.snapshots (http://repository.apache.org/snapshots).
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for ow2-snapshot (http://repository.ow2.org/nexus/content/repositories/snapshots).
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for vaadin-snapshots (http://oss.sonatype.org/content/repositories/vaadin-snapshots/).
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for vaadin-releases (http://oss.sonatype.org/content/repositories/vaadin-releases/).
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=3738370, ConflictMarker.markTime=1087188, ConflictMarker.nodeCount=548, ConflictIdSorter.graphTime=2197690, ConflictIdSorter.topsortTime=771757, ConflictIdSorter.conflictIdCount=165, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=30435881, ConflictResolver.conflictItemCount=414, DefaultDependencyCollector.collectTime=675850352, DefaultDependencyCollector.transformTime=42559394}
+[DEBUG] com.example:demo:jar:0.0.1-SNAPSHOT
+[DEBUG]    org.springframework.boot:spring-boot-starter-web:jar:2.7.6:compile
+[DEBUG]       org.springframework.boot:spring-boot-starter-json:jar:2.7.6:compile (version managed from 2.7.6)
+[DEBUG]          com.fasterxml.jackson.core:jackson-databind:jar:2.13.4.2:compile (version managed from 2.13.4.2)
+[DEBUG]             com.fasterxml.jackson.core:jackson-annotations:jar:2.13.4:compile (version managed from 2.13.4)
+[DEBUG]             com.fasterxml.jackson.core:jackson-core:jar:2.13.4:compile (version managed from 2.13.4)
+[DEBUG]          com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.13.4:compile (version managed from 2.13.4)
+[DEBUG]          com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.13.4:compile (version managed from 2.13.4)
+[DEBUG]          com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.13.4:compile (version managed from 2.13.4)
+[DEBUG]       org.springframework.boot:spring-boot-starter-tomcat:jar:2.7.6:compile (version managed from 2.7.6)
+[DEBUG]          org.apache.tomcat.embed:tomcat-embed-core:jar:9.0.69:compile (version managed from 9.0.69)
+[DEBUG]          org.apache.tomcat.embed:tomcat-embed-el:jar:9.0.69:compile (version managed from 9.0.69)
+[DEBUG]          org.apache.tomcat.embed:tomcat-embed-websocket:jar:9.0.69:compile (version managed from 9.0.69)
+[DEBUG]       org.springframework:spring-web:jar:5.3.24:compile (version managed from 5.3.24)
+[DEBUG]          org.springframework:spring-beans:jar:5.3.24:compile (version managed from 5.3.24)
+[DEBUG]       org.springframework:spring-webmvc:jar:5.3.24:compile (version managed from 5.3.24)
+[DEBUG]          org.springframework:spring-aop:jar:5.3.24:compile (version managed from 5.3.24)
+[DEBUG]          org.springframework:spring-context:jar:5.3.24:compile (version managed from 5.3.24)
+[DEBUG]          org.springframework:spring-expression:jar:5.3.24:compile (version managed from 5.3.24)
+[DEBUG]    org.springframework.boot:spring-boot-starter:jar:2.7.6:compile
+[DEBUG]       org.springframework.boot:spring-boot:jar:2.7.6:compile (version managed from 2.7.6)
+[DEBUG]       org.springframework.boot:spring-boot-autoconfigure:jar:2.7.6:compile (version managed from 2.7.6)
+[DEBUG]       jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile (version managed from 1.3.5)
+[DEBUG]       org.springframework:spring-core:jar:5.3.24:compile (version managed from 5.3.24)
+[DEBUG]          org.springframework:spring-jcl:jar:5.3.24:compile (version managed from 5.3.24)
+[DEBUG]       org.yaml:snakeyaml:jar:1.30:compile (version managed from 1.30)
+[DEBUG]    org.springframework.boot:spring-boot-starter-log4j2:jar:2.7.6:compile
+[DEBUG]       org.apache.logging.log4j:log4j-core:jar:2.17.2:compile (version managed from 2.17.2)
+[DEBUG]          org.apache.logging.log4j:log4j-api:jar:2.17.2:compile (version managed from 2.17.2)
+[DEBUG]       org.apache.logging.log4j:log4j-jul:jar:2.17.2:compile (version managed from 2.17.2)
+[DEBUG]       org.slf4j:jul-to-slf4j:jar:1.7.36:compile (version managed from 1.7.36)
+[DEBUG]    com.google.cloud:spring-cloud-gcp-starter:jar:3.4.2:compile
+[DEBUG]       com.google.cloud:spring-cloud-gcp-core:jar:3.4.2:compile (version managed from 3.4.2)
+[DEBUG]          com.google.cloud:google-cloud-core:jar:2.9.1:compile (version managed from 2.9.1)
+[DEBUG]             com.google.auto.value:auto-value-annotations:jar:1.10.1:compile (version managed from 1.10.1)
+[DEBUG]             com.google.protobuf:protobuf-java-util:jar:3.21.12:compile (version managed from 3.21.12)
+[DEBUG]             com.google.api.grpc:proto-google-common-protos:jar:2.12.0:compile (version managed from 2.12.0)
+[DEBUG]             com.google.api.grpc:proto-google-iam-v1:jar:1.7.0:compile (version managed from 1.7.0)
+[DEBUG]             org.threeten:threetenbp:jar:1.6.5:compile
+[DEBUG]             com.google.auth:google-auth-library-oauth2-http:jar:1.14.0:compile (version managed from 1.14.0)
+[DEBUG]             com.google.http-client:google-http-client-gson:jar:1.42.3:compile (version managed from 1.42.3)
+[DEBUG]             com.google.protobuf:protobuf-java:jar:3.21.12:compile (version managed from 3.21.12)
+[DEBUG]             com.google.code.findbugs:jsr305:jar:3.0.2:compile
+[DEBUG]       com.google.cloud:spring-cloud-gcp-autoconfigure:jar:3.4.2:compile (version managed from 3.4.2)
+[DEBUG]          org.apache.commons:commons-lang3:jar:3.12.0:compile (version managed from 3.12.0)
+[DEBUG]       org.slf4j:slf4j-api:jar:1.7.36:compile (version managed from 1.7.36)
+[DEBUG]    org.springframework.cloud:spring-cloud-starter-sleuth:jar:3.1.5:compile
+[DEBUG]       org.springframework.cloud:spring-cloud-starter:jar:3.1.5:compile (version managed from 3.1.5)
+[DEBUG]          org.springframework.cloud:spring-cloud-context:jar:3.1.5:compile (version managed from 3.1.5)
+[DEBUG]             org.springframework.security:spring-security-crypto:jar:5.7.5:compile (version managed from 5.6.8)
+[DEBUG]          org.springframework.cloud:spring-cloud-commons:jar:3.1.5:compile (version managed from 3.1.5)
+[DEBUG]          org.springframework.security:spring-security-rsa:jar:1.0.11.RELEASE:compile (version managed from 1.0.11.RELEASE) (exclusions managed from [org.springframework:spring-core:*:*, org.springframework.security:spring-security-crypto:*:*])
+[DEBUG]             org.bouncycastle:bcpkix-jdk15on:jar:1.69:compile
+[DEBUG]                org.bouncycastle:bcprov-jdk15on:jar:1.69:compile
+[DEBUG]                org.bouncycastle:bcutil-jdk15on:jar:1.69:compile
+[DEBUG]       org.springframework.boot:spring-boot-starter-aop:jar:2.7.6:compile (version managed from 2.6.13)
+[DEBUG]          org.aspectj:aspectjweaver:jar:1.9.7:compile (version managed from 1.9.7)
+[DEBUG]       org.springframework.cloud:spring-cloud-sleuth-autoconfigure:jar:3.1.5:compile (version managed from 3.1.5)
+[DEBUG]          org.springframework.cloud:spring-cloud-sleuth-instrumentation:jar:3.1.5:compile (version managed from 3.1.5)
+[DEBUG]             org.springframework.cloud:spring-cloud-sleuth-api:jar:3.1.5:compile (version managed from 3.1.5)
+[DEBUG]          org.aspectj:aspectjrt:jar:1.9.7:compile (version managed from 1.9.7)
+[DEBUG]       org.springframework.cloud:spring-cloud-sleuth-brave:jar:3.1.5:compile (version managed from 3.1.5)
+[DEBUG]          io.zipkin.brave:brave:jar:5.13.9:compile (version managed from 5.13.9)
+[DEBUG]          io.zipkin.brave:brave-context-slf4j:jar:5.13.9:compile (version managed from 5.13.9)
+[DEBUG]          io.zipkin.brave:brave-instrumentation-messaging:jar:5.13.9:compile (version managed from 5.13.9)
+[DEBUG]          io.zipkin.brave:brave-instrumentation-rpc:jar:5.13.9:compile (version managed from 5.13.9)
+[DEBUG]          io.zipkin.brave:brave-instrumentation-spring-rabbit:jar:5.13.9:compile (version managed from 5.13.9)
+[DEBUG]          io.zipkin.brave:brave-instrumentation-kafka-clients:jar:5.13.9:compile (version managed from 5.13.9)
+[DEBUG]          io.zipkin.brave:brave-instrumentation-kafka-streams:jar:5.13.9:compile (version managed from 5.13.9)
+[DEBUG]          io.zipkin.brave:brave-instrumentation-httpclient:jar:5.13.9:compile (version managed from 5.13.9)
+[DEBUG]             io.zipkin.brave:brave-instrumentation-http:jar:5.13.9:compile (version managed from 5.13.9)
+[DEBUG]          io.zipkin.brave:brave-instrumentation-httpasyncclient:jar:5.13.9:compile (version managed from 5.13.9)
+[DEBUG]          io.zipkin.brave:brave-instrumentation-jms:jar:5.13.9:compile (version managed from 5.13.9)
+[DEBUG]          io.zipkin.brave:brave-instrumentation-mongodb:jar:5.13.9:compile (version managed from 5.13.9)
+[DEBUG]          io.zipkin.aws:brave-propagation-aws:jar:0.21.3:compile
+[DEBUG]          io.zipkin.reporter2:zipkin-reporter-metrics-micrometer:jar:2.16.3:compile (version managed from 2.16.3)
+[DEBUG]    com.google.cloud:spring-cloud-gcp-starter-trace:jar:3.4.2:compile
+[DEBUG]       io.zipkin.gcp:zipkin-sender-stackdriver:jar:1.0.4:compile
+[DEBUG]          io.zipkin.gcp:zipkin-translation-stackdriver:jar:1.0.4:compile
+[DEBUG]             com.google.api.grpc:proto-google-cloud-trace-v2:jar:2.8.0:compile (version managed from 1.2.10)
+[DEBUG]          io.zipkin.reporter2:zipkin-reporter:jar:2.16.3:compile (version managed from 2.16.3)
+[DEBUG]             io.zipkin.zipkin2:zipkin:jar:2.23.2:compile (version managed from 2.23.2)
+[DEBUG]          com.google.api.grpc:grpc-google-cloud-trace-v2:jar:2.8.0:compile (version managed from 1.2.10)
+[DEBUG]             io.grpc:grpc-context:jar:1.51.1:compile (version managed from 1.51.1)
+[DEBUG]             com.google.errorprone:error_prone_annotations:jar:2.18.0:compile
+[DEBUG]             io.grpc:grpc-stub:jar:1.51.1:compile (version managed from 1.51.1)
+[DEBUG]             io.grpc:grpc-protobuf-lite:jar:1.51.1:compile (version managed from 1.51.1)
+[DEBUG]             com.google.auto.value:auto-value:jar:1.10.1:compile
+[DEBUG]             javax.annotation:javax.annotation-api:jar:1.3.2:compile (version managed from 1.3.2)
+[DEBUG]             com.google.guava:failureaccess:jar:1.0.1:compile
+[DEBUG]             com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:compile
+[DEBUG]             org.checkerframework:checker-qual:jar:3.29.0:compile
+[DEBUG]             com.google.j2objc:j2objc-annotations:jar:1.3:compile
+[DEBUG]       io.zipkin.gcp:brave-propagation-stackdriver:jar:1.0.4:compile
+[DEBUG]       com.google.cloud:google-cloud-core-grpc:jar:2.9.1:compile (version managed from 2.9.1)
+[DEBUG]          com.google.auth:google-auth-library-credentials:jar:1.14.0:compile (version managed from 1.14.0)
+[DEBUG]          com.google.guava:guava:jar:31.1-jre:compile (version managed from 31.1-jre)
+[DEBUG]          com.google.api:gax:jar:2.21.0:compile (version managed from 2.21.0)
+[DEBUG]             io.opencensus:opencensus-api:jar:0.31.1:compile
+[DEBUG]          com.google.api:gax-grpc:jar:2.21.0:compile (version managed from 2.21.0)
+[DEBUG]             io.grpc:grpc-alts:jar:1.51.1:compile (version managed from 1.51.1)
+[DEBUG]             io.grpc:grpc-auth:jar:1.51.1:compile (version managed from 1.51.1)
+[DEBUG]             io.grpc:grpc-protobuf:jar:1.51.1:compile (version managed from 1.51.1)
+[DEBUG]             io.grpc:grpc-netty-shaded:jar:1.51.1:compile (version managed from 1.51.1)
+[DEBUG]             io.grpc:grpc-googleapis:jar:1.51.1:runtime (version managed from 1.51.1)
+[DEBUG]          com.google.api:api-common:jar:2.4.0:compile (version managed from 2.4.0)
+[DEBUG]          io.grpc:grpc-api:jar:1.51.1:compile (version managed from 1.51.1)
+[DEBUG]          com.google.http-client:google-http-client:jar:1.42.3:compile (version managed from 1.42.3)
+[DEBUG]             org.apache.httpcomponents:httpclient:jar:4.5.13:compile (version managed from 4.5.13) (exclusions managed from [])
+[DEBUG]             org.apache.httpcomponents:httpcore:jar:4.4.15:compile (version managed from 4.4.15)
+[DEBUG]             io.opencensus:opencensus-contrib-http-util:jar:0.31.1:compile
+[DEBUG]       io.zipkin.reporter2:zipkin-reporter-brave:jar:2.16.3:compile (version managed from 2.16.3)
+[DEBUG]    com.google.cloud:spring-cloud-gcp-starter-logging:jar:3.4.2:compile
+[DEBUG]       com.google.cloud:spring-cloud-gcp-logging:jar:3.4.2:compile (version managed from 3.4.2)
+[DEBUG]          ch.qos.logback.contrib:logback-json-classic:jar:0.1.5:compile
+[DEBUG]             ch.qos.logback:logback-classic:jar:1.2.11:compile (version managed from 1.1.3)
+[DEBUG]             ch.qos.logback.contrib:logback-json-core:jar:0.1.5:compile
+[DEBUG]          com.google.cloud:google-cloud-logging-logback:jar:0.130.0-alpha:compile (version managed from 0.130.0-alpha)
+[DEBUG]             ch.qos.logback:logback-core:jar:1.2.11:compile (version managed from 1.2.11)
+[DEBUG]             com.google.cloud:google-cloud-logging:jar:3.14.1:compile (version managed from 3.14.1)
+[DEBUG]             com.google.code.gson:gson:jar:2.9.1:compile (version managed from 2.10.1)
+[DEBUG]             com.google.api.grpc:proto-google-cloud-logging-v2:jar:0.103.1:compile (version managed from 0.103.1)
+[DEBUG]             io.grpc:grpc-grpclb:jar:1.51.1:compile (version managed from 1.51.1)
+[DEBUG]             org.conscrypt:conscrypt-openjdk-uber:jar:2.5.2:compile
+[DEBUG]             io.grpc:grpc-xds:jar:1.51.1:runtime (version managed from 1.51.1)
+[DEBUG]             io.opencensus:opencensus-proto:jar:0.2.0:runtime
+[DEBUG]             io.grpc:grpc-services:jar:1.51.1:runtime (version managed from 1.51.1)
+[DEBUG]             com.google.re2j:re2j:jar:1.6:runtime
+[DEBUG]             commons-logging:commons-logging:jar:1.2:compile
+[DEBUG]             commons-codec:commons-codec:jar:1.15:compile (version managed from 1.15)
+[DEBUG]             io.grpc:grpc-core:jar:1.51.1:compile (version managed from 1.51.1)
+[DEBUG]             com.google.android:annotations:jar:4.1.1.4:runtime
+[DEBUG]             org.codehaus.mojo:animal-sniffer-annotations:jar:1.22:runtime
+[DEBUG]             io.perfmark:perfmark-api:jar:0.26.0:runtime
+[DEBUG]             org.jspecify:jspecify:jar:0.2.0:compile
+[DEBUG]    org.projectlombok:lombok:jar:1.18.24:compile (optional)
+[DEBUG]    org.springframework.boot:spring-boot-starter-test:jar:2.7.6:test
+[DEBUG]       org.springframework.boot:spring-boot-test:jar:2.7.6:test (version managed from 2.7.6)
+[DEBUG]       org.springframework.boot:spring-boot-test-autoconfigure:jar:2.7.6:test (version managed from 2.7.6)
+[DEBUG]       com.jayway.jsonpath:json-path:jar:2.7.0:test (version managed from 2.7.0)
+[DEBUG]          net.minidev:json-smart:jar:2.4.8:test (version managed from 2.4.7)
+[DEBUG]             net.minidev:accessors-smart:jar:2.4.8:test
+[DEBUG]                org.ow2.asm:asm:jar:9.1:test
+[DEBUG]       jakarta.xml.bind:jakarta.xml.bind-api:jar:2.3.3:test (version managed from 2.3.3)
+[DEBUG]          jakarta.activation:jakarta.activation-api:jar:1.2.2:test (version managed from 1.2.2)
+[DEBUG]       org.assertj:assertj-core:jar:3.22.0:test (version managed from 3.22.0)
+[DEBUG]       org.hamcrest:hamcrest:jar:2.2:test (version managed from 2.2)
+[DEBUG]       org.junit.jupiter:junit-jupiter:jar:5.8.2:test (version managed from 5.8.2)
+[DEBUG]          org.junit.jupiter:junit-jupiter-api:jar:5.8.2:test (version managed from 5.8.2)
+[DEBUG]             org.opentest4j:opentest4j:jar:1.2.0:test
+[DEBUG]             org.junit.platform:junit-platform-commons:jar:1.8.2:test (version managed from 1.8.2)
+[DEBUG]             org.apiguardian:apiguardian-api:jar:1.1.2:test
+[DEBUG]          org.junit.jupiter:junit-jupiter-params:jar:5.8.2:test (version managed from 5.8.2)
+[DEBUG]          org.junit.jupiter:junit-jupiter-engine:jar:5.8.2:test (version managed from 5.8.2)
+[DEBUG]             org.junit.platform:junit-platform-engine:jar:1.8.2:test (version managed from 1.8.2)
+[DEBUG]       org.mockito:mockito-core:jar:4.5.1:test (version managed from 4.5.1)
+[DEBUG]          net.bytebuddy:byte-buddy:jar:1.12.19:test (version managed from 1.12.9)
+[DEBUG]          net.bytebuddy:byte-buddy-agent:jar:1.12.19:test (version managed from 1.12.9)
+[DEBUG]          org.objenesis:objenesis:jar:3.2:test
+[DEBUG]       org.mockito:mockito-junit-jupiter:jar:4.5.1:test (version managed from 4.5.1)
+[DEBUG]       org.skyscreamer:jsonassert:jar:1.5.1:test (version managed from 1.5.1)
+[DEBUG]          com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[DEBUG]       org.springframework:spring-test:jar:5.3.24:test (version managed from 5.3.24)
+[DEBUG]       org.xmlunit:xmlunit-core:jar:2.9.0:test (version managed from 2.9.0)
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:resources (default-resources) @ demo ---
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for repository.jboss.org (http://repository.jboss.org/maven2).
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for snapshots.jboss.org (http://snapshots.jboss.org/maven2).
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for oss.sonatype.org/jboss-snapshots (http://oss.sonatype.org/content/repositories/jboss-snapshots).
+[DEBUG] Using mirror maven-default-http-blocker (http://0.0.0.0/) for codehaus.snapshots (http://snapshots.repository.codehaus.org).
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=1517343, ConflictMarker.markTime=131203, ConflictMarker.nodeCount=99, ConflictIdSorter.graphTime=249382, ConflictIdSorter.topsortTime=82215, ConflictIdSorter.conflictIdCount=35, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2277075, ConflictResolver.conflictItemCount=85, DefaultDependencyCollector.collectTime=112351880, DefaultDependencyCollector.transformTime=4423409}
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.1.0:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:3.1.0:compile
+[DEBUG]    org.apache.maven:maven-core:jar:3.1.0:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:3.1.0:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.1.0:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.1.0:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.1.0:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.1.0:compile
+[DEBUG]          org.eclipse.aether:aether-spi:jar:0.9.0.M2:compile
+[DEBUG]       org.eclipse.aether:aether-impl:jar:0.9.0.M2:compile
+[DEBUG]       org.eclipse.aether:aether-api:jar:0.9.0.M2:compile
+[DEBUG]       org.eclipse.aether:aether-util:jar:0.9.0.M2:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:3.0.10:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.4.2:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.apache.maven:maven-model:jar:3.1.0:compile
+[DEBUG]    org.codehaus.plexus:plexus-component-annotations:jar:2.0.0:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.26:runtime
+[DEBUG]    org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.0.0.M2a:compile
+[DEBUG]       javax.enterprise:cdi-api:jar:1.0:compile
+[DEBUG]          javax.annotation:jsr250-api:jar:1.0:compile
+[DEBUG]          javax.inject:javax.inject:jar:1:compile
+[DEBUG]       com.google.guava:guava:jar:10.0.1:compile
+[DEBUG]          com.google.code.findbugs:jsr305:jar:1.3.9:compile
+[DEBUG]       org.sonatype.sisu:sisu-guice:jar:no_aop:3.1.0:compile
+[DEBUG]          aopalliance:aopalliance:jar:1.0:compile
+[DEBUG]       org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.0.0.M2a:compile
+[DEBUG]          asm:asm:jar:3.3.1:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:3.2.0:compile
+[DEBUG]       org.apache.maven.shared:maven-shared-utils:jar:3.3.3:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.7:compile
+[DEBUG]    commons-io:commons-io:jar:2.6:compile
+[DEBUG]    org.apache.commons:commons-lang3:jar:3.8.1:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.2.0
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.2.0
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:3.2.0
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:3.2.0
+[DEBUG]   Included: org.eclipse.aether:aether-util:jar:0.9.0.M2
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.10
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:2.0.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.26
+[DEBUG]   Included: javax.enterprise:cdi-api:jar:1.0
+[DEBUG]   Included: javax.annotation:jsr250-api:jar:1.0
+[DEBUG]   Included: com.google.guava:guava:jar:10.0.1
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:1.3.9
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:no_aop:3.1.0
+[DEBUG]   Included: aopalliance:aopalliance:jar:1.0
+[DEBUG]   Included: org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.0.0.M2a
+[DEBUG]   Included: asm:asm:jar:3.3.1
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:3.2.0
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.3.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.7
+[DEBUG]   Included: commons-io:commons-io:jar:2.6
+[DEBUG]   Included: org.apache.commons:commons-lang3:jar:3.8.1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:3.2.0:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:3.2.0, parent: java.net.URLClassLoader@3d646c37]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:3.2.0:resources' with basic configurator -->
+[DEBUG]   (f) addDefaultExcludes = true
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (s) delimiters = [@]
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (f) fileNameFiltering = false
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /home/longz/microservice-trace/spring/trace_demo/trace-service-one/target/classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.example:demo:0.0.1-SNAPSHOT @ /home/longz/microservice-trace/spring/trace_demo/trace-service-one/pom.xml
+[DEBUG]   (f) propertiesEncoding = UTF-8
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: true, FileSet {directory: /home/longz/microservice-trace/spring/trace_demo/trace-service-one/src/main/resources, PatternSet [includes: {**/application*.yml, **/application*.yaml, **/application*.properties}, excludes: {}]}}, Resource {targetPath: null, filtering: false, FileSet {directory: /home/longz/microservice-trace/spring/trace_demo/trace-service-one/src/main/resources, PatternSet [includes: {}, excludes: {**/application*.yml, **/application*.yaml, **/application*.properties}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@47af099e
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = false
+[DEBUG] -- end configuration --
+[DEBUG] properties used {spring-integration.version=5.5.15, flyway.version=8.5.13, env.DEVSHELL_CLIENTS_DIR=/var/run/google/devshell, java.specification.version=17, env.GOOGLE_CLOUD_SHELL=true, glassfish-jstl.version=1.2.6, env.GEM_HOME=/home/longz/.gems, java.vendor.url=https://tracker.debian.org/openjdk-17, sun.boot.library.path=/usr/lib/jvm/java-17-openjdk-amd64/lib, sun.java.command=org.apache.maven.wrapper.MavenWrapperMain -DskipTests -X spring-boot:run, jdk.debug=release, maven.version=3.8.6, env.USE_GKE_GCLOUD_AUTH_PLUGIN=True, javax-activation.version=1.2.0, kafka.version=3.1.2, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, byte-buddy.version=1.12.19, maven-install-plugin.version=2.5.2, java.runtime.version=17.0.6+10-Debian-1deb11u1, httpclient5.version=5.1.4, env.CLOUD_SHELL=true, micrometer.version=1.9.6, rxjava-adapter.version=1.2.1, project.baseUri=file:/home/longz/microservice-trace/spring/trace_demo/trace-service-one/, hibernate.version=5.6.14.Final, java.io.tmpdir=/tmp, java.version=17.0.6, javax-persistence.version=2.2, jakarta-ws-rs.version=2.1.6, build-helper-maven-plugin.version=3.3.0, mockito.version=4.5.1, java.vm.specification.name=Java Virtual Machine Specification, infinispan.version=13.0.12.Final, nekohtml.version=1.9.22, maven-assembly-plugin.version=3.3.0, native.encoding=UTF-8, java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, jakarta-servlet.version=4.0.4, java.vendor=Debian, thymeleaf-extras-java8time.version=3.0.4.RELEASE, undertow.version=2.2.20.Final, mariadb.version=3.0.9, selenium-htmlunit.version=3.61.0, thymeleaf-extras-data-attribute.version=2.0.1, ehcache3.version=3.10.8, jakarta-xml-bind.version=2.3.3, commons-dbcp2.version=2.9.0, env.LANG=en_US.UTF-8, mongodb.version=4.6.1, env.BROWSER=echo, env.CLOUDSDK_DIAGNOSTICS_HIDDEN_PROPERTY_WHITELIST=compute/gce_metadata_read_timeout_sec, java.vm.specification.version=17, env.WEB_HOST=cs-585904490940-default.cs-asia-east1-jnrc.cloudshell.dev, javax-transaction.version=1.3, maven.compiler.source=17, user.home=/home/longz, postgresql.version=42.3.8, reactive-streams.version=1.0.4, jmustache.version=1.15, querydsl.version=5.0.0, appengine-sdk.version=1.9.98, thymeleaf-layout-dialect.version=3.0.0, hamcrest.version=2.2, os.version=5.15.65+, commons-pool.version=1.6, env.GEM_PATH=/home/longz/.gems:/usr/local/lib/ruby/gems/2.7.0/, jakarta-jms.version=2.0.3, jakarta-transaction.version=1.3.3, java.vm.name=OpenJDK 64-Bit Server VM, maven-help-plugin.version=3.2.0, json-path.version=2.7.0, jaxen.version=1.2.0, johnzon.version=1.2.19, env.TMUX_PANE=%0, env.DEVSHELL_SERVER_URL=https://ssh.cloud.google.com, os.arch=amd64, spring-batch.version=4.3.7, couchbase-client.version=3.3.4, derby.version=10.14.2.0, env.PROMPT_COMMAND=history -a;update_devshell_project_id &> /dev/null, env.USE_CLOUD_SDK_PYTHON3=, javax-jsonb.version=1.0, spring-cloud-gcp.version=3.4.2, rxjava2.version=2.2.21, javax-jaxws.version=2.3.1, json-smart.version=2.4.8, javax-websocket.version=1.1, commons-codec.version=1.15, caffeine.version=2.9.3, h2.version=2.1.214, env.JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64, java.vm.compressedOopsMode=Zero based, env.V2V_GCP_V2V_IMAGE=projects/v2v-community/global/images/family/v2v-stable, env.ACTIVE_CUSTOM_IMAGE=, cache2k.version=2.6.1.Final, pooled-jms.version=1.2.4, unboundid-ldapsdk.version=6.0.6, thymeleaf-extras-springsecurity.version=3.0.4.RELEASE, javax-jaxb.version=2.3.1, sqlite-jdbc.version=3.36.0.3, jakarta-servlet-jsp-jstl.version=1.2.7, activemq.version=5.16.5, httpasyncclient.version=4.1.5, env.CUSTOM_ENVIRONMENT=, jtds.version=1.3.1, javax-jms.version=2.0.1, jakarta-websocket.version=1.1.2, env.LOGNAME=longz, spring-security.version=5.7.5, hibernate-validator.version=6.2.5.Final, assertj.version=3.22.0, jakarta-xml-soap.version=1.4.2, influxdb-java.version=2.22, env.DEVSHELL_IP_ADDRESS=, httpcore5.version=5.1.5, lombok.version=1.18.24, maven.compiler.target=17, jakarta-xml-ws.version=2.3.3, commons-pool2.version=2.11.1, jackson-bom.version=2.13.4.20221013, spring-retry.version=1.3.4, maven-invoker-plugin.version=3.2.2, maven-antrun-plugin.version=3.0.0, maven.conf=/home/longz/.m2/wrapper/dists/apache-maven-3.8.6-bin/1ks0nkde5v1pk9vtc31i9d0lcd/apache-maven-3.8.6/conf, sun.java.launcher=SUN_STANDARD, user.country=US, resource.delimiter=@, javax-json.version=1.1.4, jboss-logging.version=3.4.3.Final, env.CLOUDSDK_PYTHON=python3, maven-resources-plugin.version=3.2.0, javax-validation.version=2.0.1.Final, netty.version=4.1.85.Final, jetty-jsp.version=2.2.0.v201112011158, maven-source-plugin.version=3.2.1, jetty.version=9.4.49.v20220914, rxjava.version=1.3.8, env.CLOUDSDK_CONFIG=/tmp/tmp.vIBEzIDQmz, env.MINIKUBE_FORCE_SYSTEMD=true, elasticsearch.version=7.17.7, env.GOOGLE_CLOUD_PROJECT=longz-prem-bd, java.runtime.name=OpenJDK Runtime Environment, rest-assured.version=4.5.1, maven-deploy-plugin.version=2.8.2, env.MAVEN_CMD_LINE_ARGS= -DskipTests -X spring-boot:run, log4j2.version=2.17.2, maven-failsafe-plugin.version=2.22.2, spring-framework.version=5.3.24, dropwizard-metrics.version=4.2.13, git-commit-id-plugin.version=4.9.10, env.TMUX=/tmp/tmux-1000/default,512,0, kotlin-coroutines.version=1.6.4, hazelcast-hibernate5.version=2.2.1, htmlunit.version=2.60.0, env.TERM=screen, env.MINIKUBE_WANTUPDATENOTIFICATION=false, sun.arch.data.model=64, spring-restdocs.version=2.0.7.RELEASE, freemarker.version=2.3.31, env.ASPNETCORE_URLS=http://*:8080, thymeleaf.version=3.0.15.RELEASE, jakarta-json.version=1.1.6, janino.version=3.1.9, env.GOPATH=/home/longz/gopath:/google/gopath, maven-jar-plugin.version=3.2.2, maven-compiler-plugin.version=3.10.1, java.specification.vendor=Oracle Corporation, rabbit-amqp-client.version=5.14.2, java.version.date=2023-01-17, spring-amqp.version=2.4.8, java.home=/usr/lib/jvm/java-17-openjdk-amd64, env.DEVSHELL_PROJECT_ID=longz-prem-bd, env.DOCKER_HOST=unix:///var/run/docker.sock, maven-war-plugin.version=3.3.2, jolokia.version=1.7.1, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, jetty-reactive-httpclient.version=1.1.13, env.PATH=/home/longz/.local/bin:/opt/gradle/bin:/opt/maven/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/go/bin:/usr/local/nvm/versions/node/v18.12.1/bin:/usr/local/rvm/bin:/google/go_appengine:/google/google_appengine:/google/migrate/anthos/:/home/longz/.gems/bin:/usr/local/rvm/bin:/home/longz/gopath/bin:/google/gopath/bin:/google/flutter/bin, env.CREDENTIALS_SERVICE_PORT=8998, maven-dependency-plugin.version=3.3.0, httpclient.version=4.5.13, env.LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:, jsonassert.version=1.5.1, file.encoding=UTF-8, gson.version=2.9.1, sun-mail.version=1.6.7, jakarta-annotation.version=1.3.5, env.SHLVL=3, env.MINIKUBE_HOME=/google/minikube, mssql-jdbc.version=10.2.1.jre8, snakeyaml.version=1.30, env.__TMP_CLOUDSDK_CONFIG=/tmp/tmp.vIBEzIDQmz, liquibase.version=4.9.1, prometheus-client.version=0.15.0, httpcore.version=4.4.15, lettuce.version=6.1.10.RELEASE, classworlds.conf=/home/longz/.m2/wrapper/dists/apache-maven-3.8.6-bin/1ks0nkde5v1pk9vtc31i9d0lcd/apache-maven-3.8.6/bin/m2.conf, sun.io.unicode.encoding=UnicodeLittle, env.USER_EMAIL=longz@premium-cloud-support.com, kotlin.version=1.6.21, wsdl4j.version=1.6.3, jakarta-management.version=1.1.4, env.GOOGLE_CLOUD_QUOTA_PROJECT=longz-prem-bd, tomcat.version=9.0.69, sendgrid.version=4.9.3, env.SSH_CLIENT=127.0.0.1 34662 22, glassfish-jaxb.version=2.3.7, spring-ws.version=3.1.4, commons-lang3.version=3.12.0, os.name=Linux, junit.version=4.13.2, jetty-el.version=9.0.52, db2-jdbc.version=11.5.7.0, env.DEVSHELL_GCLOUD_CONFIG=cloudshell-2677, maven.build.timestamp=2023-02-17T13:59:11Z, env.SSH_CONNECTION=127.0.0.1 34662 127.0.0.1 22, reactor-bom.version=2020.0.25, maven-enforcer-plugin.version=3.0.0, jstl.version=1.2, spring-graphql.version=1.0.3, quartz.version=2.3.2, javax-money.version=1.1, graphql-java.version=18.3, spring-hateoas.version=1.5.2, path.separator=:, env.SHELL=/bin/bash, jakarta-validation.version=2.0.2, env.HISTSIZE=1000, env.HISTFILESIZE=1000, maven.multiModuleProjectDirectory=/home/longz/microservice-trace/spring/trace_demo/trace-service-one, oracle-database.version=21.5.0.0, env.API_DOGFOOD=, env.MAVEN_PROJECTBASEDIR=/home/longz/microservice-trace/spring/trace_demo/trace-service-one, java.vm.info=mixed mode, sharing, cassandra-driver.version=4.14.1, env.CLOUDSDK_DIAGNOSTICS_HIDDEN_PROPERTY_ALLOWLIST=compute/gce_metadata_read_timeout_sec, env.USER=longz, java.class.version=61.0, xml-maven-plugin.version=1.0.2, env.BASHRC_GOOGLE_PATH=/google/devshell/bashrc.google, sun.jnu.encoding=UTF-8, spring-cloud.version=2021.0.5, xmlunit2.version=2.9.0, jakarta-mail.version=1.6.7, okhttp.version=4.9.3, slf4j.version=1.7.36, r2dbc-bom.version=Borca-SR2, env.CLOUDSHELL_ENVIRONMENT=prod, solr.version=8.11.2, env.CLOUDSHELL_OPEN_DIR=cloudshell_open, saaj-impl.version=1.5.3, maven.build.version=Apache Maven 3.8.6 (84538c9988a25aec085021c365c560670ad80f63), hikaricp.version=4.0.3, maven.home=/home/longz/.m2/wrapper/dists/apache-maven-3.8.6-bin/1ks0nkde5v1pk9vtc31i9d0lcd/apache-maven-3.8.6, maven-shade-plugin.version=3.3.0, sun.stderr.encoding=UTF-8, env.DOTNET_SKIP_FIRST_TIME_EXPERIENCE=1, jakarta-json-bind.version=1.0.2, file.separator=/, line.separator=
+, env.SSH_TTY=/dev/pts/1, spring-kafka.version=2.8.11, jersey.version=2.35, user.name=longz, hazelcast.version=5.1.5, jdom2.version=2.0.6.1, atomikos.version=4.0.6, aspectj.version=1.9.7, env.BASHRC_PATH=/home/longz/.bashrc, hsqldb.version=2.5.2, webjars-locator-core.version=0.50, project.reporting.outputEncoding=UTF-8, awaitility.version=4.2.0, env.OLDPWD=/home/longz/microservice-trace/spring/trace_demo/trace-service-one, env.PWD=/home/longz/microservice-trace/spring/trace_demo/trace-service-one, embedded-mongo.version=3.4.11, spring-ldap.version=2.4.1, java.class.path=/home/longz/microservice-trace/spring/trace_demo/trace-service-one/.mvn/wrapper/maven-wrapper.jar, dependency-management-plugin.version=1.0.15.RELEASE, env.HOME=/home/longz, java.vm.vendor=Debian, rabbit-stream-client.version=0.5.0, maven-javadoc-plugin.version=3.4.1, servlet-api.version=4.0.1, rsocket.version=1.1.3, jakarta-persistence.version=2.2.3, artemis.version=2.19.1, groovy.version=3.0.13, javax-cache.version=1.1.1, logback.version=1.2.11, env.GCE_METADATA_HOST=169.254.169.254, sun.cpu.endian=little, versions-maven-plugin.version=2.10.0, user.language=en, jedis.version=3.8.0, maven-clean-plugin.version=3.2.0, env.TRUSTED_ENVIRONMENT=true, javax-mail.version=1.6.2, maven-surefire-plugin.version=2.22.2, javax-annotation.version=1.3.2, spring-data-bom.version=2021.2.6, mysql.version=8.0.31, classmate.version=1.5.1, jaybird.version=4.0.7.java8, antlr2.version=2.7.7, env.CLOUD_SHELL_IMAGE_VERSION=, selenium.version=4.1.4, glassfish-el.version=3.0.4, project.build.sourceEncoding=UTF-8, skipTests=true, jooq.version=3.14.16, java.vendor.url.bug=https://bugs.debian.org/openjdk-17, user.dir=/home/longz/microservice-trace/spring/trace_demo/trace-service-one, ehcache.version=2.10.9.2, junit-jupiter.version=5.8.2, java.vm.version=17.0.6+10-Debian-1deb11u1, neo4j-java-driver.version=4.4.9, jakarta-activation.version=1.2.2, spring-session-bom.version=2021.2.0}
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[DEBUG] resource with targetPath null
+directory /home/longz/microservice-trace/spring/trace_demo/trace-service-one/src/main/resources
+excludes []
+includes [**/application*.yml, **/application*.yaml, **/application*.properties]
+[DEBUG] ignoreDelta true
+[INFO] Copying 1 resource
+[DEBUG] Copying file application.properties
+[DEBUG] file application.properties has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'application.properties'.
+[DEBUG] filtering /home/longz/microservice-trace/spring/trace_demo/trace-service-one/src/main/resources/application.properties to /home/longz/microservice-trace/spring/trace_demo/trace-service-one/target/classes/application.properties
+[DEBUG] resource with targetPath null
+directory /home/longz/microservice-trace/spring/trace_demo/trace-service-one/src/main/resources
+excludes [**/application*.yml, **/application*.yaml, **/application*.properties]
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 2 resources
+[DEBUG] Copying file log4j2.xml
+[DEBUG] file log4j2.xml has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'log4j2.xml'.
+[DEBUG] copy /home/longz/microservice-trace/spring/trace_demo/trace-service-one/src/main/resources/log4j2.xml to /home/longz/microservice-trace/spring/trace_demo/trace-service-one/target/classes/log4j2.xml
+[DEBUG] Copying file logback.xml
+[DEBUG] file logback.xml has a filtered file extension
+[DEBUG] Using 'UTF-8' encoding to copy filtered resource 'logback.xml'.
+[DEBUG] copy /home/longz/microservice-trace/spring/trace_demo/trace-service-one/src/main/resources/logback.xml to /home/longz/microservice-trace/spring/trace_demo/trace-service-one/target/classes/logback.xml
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.10.1:compile (default-compile) @ demo ---
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=42664, ConflictMarker.markTime=25886, ConflictMarker.nodeCount=17, ConflictIdSorter.graphTime=12823, ConflictIdSorter.topsortTime=26286, ConflictIdSorter.conflictIdCount=12, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=527960, ConflictResolver.conflictItemCount=17, DefaultDependencyCollector.collectTime=20694152, DefaultDependencyCollector.transformTime=684829}
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.10.1
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:3.3.4:compile
+[DEBUG]       commons-io:commons-io:jar:2.6:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:2.0.0:compile (version managed from default)
+[DEBUG]    org.codehaus.plexus:plexus-java:jar:1.1.1:compile
+[DEBUG]       org.ow2.asm:asm:jar:9.2:compile
+[DEBUG]       com.thoughtworks.qdox:qdox:jar:2.0.1:compile (version managed from default)
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.11.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:3.4.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.11.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:2.11.1:runtime
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.10.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.10.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.10.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.10.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.3.4
+[DEBUG]   Included: commons-io:commons-io:jar:2.6
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:2.0.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-java:jar:1.1.1
+[DEBUG]   Included: org.ow2.asm:asm:jar:9.2
+[DEBUG]   Included: com.thoughtworks.qdox:qdox:jar:2.0.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.11.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.4.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.11.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.11.1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.10.1:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.10.1, parent: java.net.URLClassLoader@3d646c37]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.10.1:compile' with basic configurator -->
+[DEBUG]   (f) basedir = /home/longz/microservice-trace/spring/trace_demo/trace-service-one
+[DEBUG]   (f) buildDirectory = /home/longz/microservice-trace/spring/trace_demo/trace-service-one/target
+[DEBUG]   (f) compilePath = [/home/longz/microservice-trace/spring/trace_demo/trace-service-one/target/classes, /home/longz/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.7.6/spring-boot-starter-web-2.7.6.jar, /home/longz/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.7.6/spring-boot-starter-json-2.7.6.jar, /home/longz/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.4.2/jackson-databind-2.13.4.2.jar, /home/longz/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.4/jackson-annotations-2.13.4.jar, /home/longz/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.4/jackson-core-2.13.4.jar, /home/longz/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.13.4/jackson-datatype-jdk8-2.13.4.jar, /home/longz/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.4/jackson-datatype-jsr310-2.13.4.jar, /home/longz/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.13.4/jackson-module-parameter-names-2.13.4.jar, /home/longz/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.7.6/spring-boot-starter-tomcat-2.7.6.jar, /home/longz/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.69/tomcat-embed-core-9.0.69.jar, /home/longz/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.69/tomcat-embed-el-9.0.69.jar, /home/longz/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.69/tomcat-embed-websocket-9.0.69.jar, /home/longz/.m2/repository/org/springframework/spring-web/5.3.24/spring-web-5.3.24.jar, /home/longz/.m2/repository/org/springframework/spring-beans/5.3.24/spring-beans-5.3.24.jar, /home/longz/.m2/repository/org/springframework/spring-webmvc/5.3.24/spring-webmvc-5.3.24.jar, /home/longz/.m2/repository/org/springframework/spring-aop/5.3.24/spring-aop-5.3.24.jar, /home/longz/.m2/repository/org/springframework/spring-context/5.3.24/spring-context-5.3.24.jar, /home/longz/.m2/repository/org/springframework/spring-expression/5.3.24/spring-expression-5.3.24.jar, /home/longz/.m2/repository/org/springframework/boot/spring-boot-starter/2.7.6/spring-boot-starter-2.7.6.jar, /home/longz/.m2/repository/org/springframework/boot/spring-boot/2.7.6/spring-boot-2.7.6.jar, /home/longz/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.7.6/spring-boot-autoconfigure-2.7.6.jar, /home/longz/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar, /home/longz/.m2/repository/org/springframework/spring-core/5.3.24/spring-core-5.3.24.jar, /home/longz/.m2/repository/org/springframework/spring-jcl/5.3.24/spring-jcl-5.3.24.jar, /home/longz/.m2/repository/org/yaml/snakeyaml/1.30/snakeyaml-1.30.jar, /home/longz/.m2/repository/org/springframework/boot/spring-boot-starter-log4j2/2.7.6/spring-boot-starter-log4j2-2.7.6.jar, /home/longz/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.2/log4j-core-2.17.2.jar, /home/longz/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2.jar, /home/longz/.m2/repository/org/apache/logging/log4j/log4j-jul/2.17.2/log4j-jul-2.17.2.jar, /home/longz/.m2/repository/org/slf4j/jul-to-slf4j/1.7.36/jul-to-slf4j-1.7.36.jar, /home/longz/.m2/repository/com/google/cloud/spring-cloud-gcp-starter/3.4.2/spring-cloud-gcp-starter-3.4.2.jar, /home/longz/.m2/repository/com/google/cloud/spring-cloud-gcp-core/3.4.2/spring-cloud-gcp-core-3.4.2.jar, /home/longz/.m2/repository/com/google/cloud/google-cloud-core/2.9.1/google-cloud-core-2.9.1.jar, /home/longz/.m2/repository/com/google/auto/value/auto-value-annotations/1.10.1/auto-value-annotations-1.10.1.jar, /home/longz/.m2/repository/com/google/protobuf/protobuf-java-util/3.21.12/protobuf-java-util-3.21.12.jar, /home/longz/.m2/repository/com/google/api/grpc/proto-google-common-protos/2.12.0/proto-google-common-protos-2.12.0.jar, /home/longz/.m2/repository/com/google/api/grpc/proto-google-iam-v1/1.7.0/proto-google-iam-v1-1.7.0.jar, /home/longz/.m2/repository/org/threeten/threetenbp/1.6.5/threetenbp-1.6.5.jar, /home/longz/.m2/repository/com/google/auth/google-auth-library-oauth2-http/1.14.0/google-auth-library-oauth2-http-1.14.0.jar, /home/longz/.m2/repository/com/google/http-client/google-http-client-gson/1.42.3/google-http-client-gson-1.42.3.jar, /home/longz/.m2/repository/com/google/protobuf/protobuf-java/3.21.12/protobuf-java-3.21.12.jar, /home/longz/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar, /home/longz/.m2/repository/com/google/cloud/spring-cloud-gcp-autoconfigure/3.4.2/spring-cloud-gcp-autoconfigure-3.4.2.jar, /home/longz/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar, /home/longz/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar, /home/longz/.m2/repository/org/springframework/cloud/spring-cloud-starter-sleuth/3.1.5/spring-cloud-starter-sleuth-3.1.5.jar, /home/longz/.m2/repository/org/springframework/cloud/spring-cloud-starter/3.1.5/spring-cloud-starter-3.1.5.jar, /home/longz/.m2/repository/org/springframework/cloud/spring-cloud-context/3.1.5/spring-cloud-context-3.1.5.jar, /home/longz/.m2/repository/org/springframework/security/spring-security-crypto/5.7.5/spring-security-crypto-5.7.5.jar, /home/longz/.m2/repository/org/springframework/cloud/spring-cloud-commons/3.1.5/spring-cloud-commons-3.1.5.jar, /home/longz/.m2/repository/org/springframework/security/spring-security-rsa/1.0.11.RELEASE/spring-security-rsa-1.0.11.RELEASE.jar, /home/longz/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.69/bcpkix-jdk15on-1.69.jar, /home/longz/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.69/bcprov-jdk15on-1.69.jar, /home/longz/.m2/repository/org/bouncycastle/bcutil-jdk15on/1.69/bcutil-jdk15on-1.69.jar, /home/longz/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.7.6/spring-boot-starter-aop-2.7.6.jar, /home/longz/.m2/repository/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar, /home/longz/.m2/repository/org/springframework/cloud/spring-cloud-sleuth-autoconfigure/3.1.5/spring-cloud-sleuth-autoconfigure-3.1.5.jar, /home/longz/.m2/repository/org/springframework/cloud/spring-cloud-sleuth-instrumentation/3.1.5/spring-cloud-sleuth-instrumentation-3.1.5.jar, /home/longz/.m2/repository/org/springframework/cloud/spring-cloud-sleuth-api/3.1.5/spring-cloud-sleuth-api-3.1.5.jar, /home/longz/.m2/repository/org/aspectj/aspectjrt/1.9.7/aspectjrt-1.9.7.jar, /home/longz/.m2/repository/org/springframework/cloud/spring-cloud-sleuth-brave/3.1.5/spring-cloud-sleuth-brave-3.1.5.jar, /home/longz/.m2/repository/io/zipkin/brave/brave/5.13.9/brave-5.13.9.jar, /home/longz/.m2/repository/io/zipkin/brave/brave-context-slf4j/5.13.9/brave-context-slf4j-5.13.9.jar, /home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-messaging/5.13.9/brave-instrumentation-messaging-5.13.9.jar, /home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-rpc/5.13.9/brave-instrumentation-rpc-5.13.9.jar, /home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-spring-rabbit/5.13.9/brave-instrumentation-spring-rabbit-5.13.9.jar, /home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-kafka-clients/5.13.9/brave-instrumentation-kafka-clients-5.13.9.jar, /home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-kafka-streams/5.13.9/brave-instrumentation-kafka-streams-5.13.9.jar, /home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-httpclient/5.13.9/brave-instrumentation-httpclient-5.13.9.jar, /home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-http/5.13.9/brave-instrumentation-http-5.13.9.jar, /home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-httpasyncclient/5.13.9/brave-instrumentation-httpasyncclient-5.13.9.jar, /home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-jms/5.13.9/brave-instrumentation-jms-5.13.9.jar, /home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-mongodb/5.13.9/brave-instrumentation-mongodb-5.13.9.jar, /home/longz/.m2/repository/io/zipkin/aws/brave-propagation-aws/0.21.3/brave-propagation-aws-0.21.3.jar, /home/longz/.m2/repository/io/zipkin/reporter2/zipkin-reporter-metrics-micrometer/2.16.3/zipkin-reporter-metrics-micrometer-2.16.3.jar, /home/longz/.m2/repository/com/google/cloud/spring-cloud-gcp-starter-trace/3.4.2/spring-cloud-gcp-starter-trace-3.4.2.jar, /home/longz/.m2/repository/io/zipkin/gcp/zipkin-sender-stackdriver/1.0.4/zipkin-sender-stackdriver-1.0.4.jar, /home/longz/.m2/repository/io/zipkin/gcp/zipkin-translation-stackdriver/1.0.4/zipkin-translation-stackdriver-1.0.4.jar, /home/longz/.m2/repository/com/google/api/grpc/proto-google-cloud-trace-v2/2.8.0/proto-google-cloud-trace-v2-2.8.0.jar, /home/longz/.m2/repository/io/zipkin/reporter2/zipkin-reporter/2.16.3/zipkin-reporter-2.16.3.jar, /home/longz/.m2/repository/io/zipkin/zipkin2/zipkin/2.23.2/zipkin-2.23.2.jar, /home/longz/.m2/repository/com/google/api/grpc/grpc-google-cloud-trace-v2/2.8.0/grpc-google-cloud-trace-v2-2.8.0.jar, /home/longz/.m2/repository/io/grpc/grpc-context/1.51.1/grpc-context-1.51.1.jar, /home/longz/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar, /home/longz/.m2/repository/io/grpc/grpc-stub/1.51.1/grpc-stub-1.51.1.jar, /home/longz/.m2/repository/io/grpc/grpc-protobuf-lite/1.51.1/grpc-protobuf-lite-1.51.1.jar, /home/longz/.m2/repository/com/google/auto/value/auto-value/1.10.1/auto-value-1.10.1.jar, /home/longz/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar, /home/longz/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar, /home/longz/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar, /home/longz/.m2/repository/org/checkerframework/checker-qual/3.29.0/checker-qual-3.29.0.jar, /home/longz/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar, /home/longz/.m2/repository/io/zipkin/gcp/brave-propagation-stackdriver/1.0.4/brave-propagation-stackdriver-1.0.4.jar, /home/longz/.m2/repository/com/google/cloud/google-cloud-core-grpc/2.9.1/google-cloud-core-grpc-2.9.1.jar, /home/longz/.m2/repository/com/google/auth/google-auth-library-credentials/1.14.0/google-auth-library-credentials-1.14.0.jar, /home/longz/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar, /home/longz/.m2/repository/com/google/api/gax/2.21.0/gax-2.21.0.jar, /home/longz/.m2/repository/io/opencensus/opencensus-api/0.31.1/opencensus-api-0.31.1.jar, /home/longz/.m2/repository/com/google/api/gax-grpc/2.21.0/gax-grpc-2.21.0.jar, /home/longz/.m2/repository/io/grpc/grpc-alts/1.51.1/grpc-alts-1.51.1.jar, /home/longz/.m2/repository/io/grpc/grpc-auth/1.51.1/grpc-auth-1.51.1.jar, /home/longz/.m2/repository/io/grpc/grpc-protobuf/1.51.1/grpc-protobuf-1.51.1.jar, /home/longz/.m2/repository/io/grpc/grpc-netty-shaded/1.51.1/grpc-netty-shaded-1.51.1.jar, /home/longz/.m2/repository/com/google/api/api-common/2.4.0/api-common-2.4.0.jar, /home/longz/.m2/repository/io/grpc/grpc-api/1.51.1/grpc-api-1.51.1.jar, /home/longz/.m2/repository/com/google/http-client/google-http-client/1.42.3/google-http-client-1.42.3.jar, /home/longz/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar, /home/longz/.m2/repository/org/apache/httpcomponents/httpcore/4.4.15/httpcore-4.4.15.jar, /home/longz/.m2/repository/io/opencensus/opencensus-contrib-http-util/0.31.1/opencensus-contrib-http-util-0.31.1.jar, /home/longz/.m2/repository/io/zipkin/reporter2/zipkin-reporter-brave/2.16.3/zipkin-reporter-brave-2.16.3.jar, /home/longz/.m2/repository/com/google/cloud/spring-cloud-gcp-starter-logging/3.4.2/spring-cloud-gcp-starter-logging-3.4.2.jar, /home/longz/.m2/repository/com/google/cloud/spring-cloud-gcp-logging/3.4.2/spring-cloud-gcp-logging-3.4.2.jar, /home/longz/.m2/repository/ch/qos/logback/contrib/logback-json-classic/0.1.5/logback-json-classic-0.1.5.jar, /home/longz/.m2/repository/ch/qos/logback/logback-classic/1.2.11/logback-classic-1.2.11.jar, /home/longz/.m2/repository/ch/qos/logback/contrib/logback-json-core/0.1.5/logback-json-core-0.1.5.jar, /home/longz/.m2/repository/com/google/cloud/google-cloud-logging-logback/0.130.0-alpha/google-cloud-logging-logback-0.130.0-alpha.jar, /home/longz/.m2/repository/ch/qos/logback/logback-core/1.2.11/logback-core-1.2.11.jar, /home/longz/.m2/repository/com/google/cloud/google-cloud-logging/3.14.1/google-cloud-logging-3.14.1.jar, /home/longz/.m2/repository/com/google/code/gson/gson/2.9.1/gson-2.9.1.jar, /home/longz/.m2/repository/com/google/api/grpc/proto-google-cloud-logging-v2/0.103.1/proto-google-cloud-logging-v2-0.103.1.jar, /home/longz/.m2/repository/io/grpc/grpc-grpclb/1.51.1/grpc-grpclb-1.51.1.jar, /home/longz/.m2/repository/org/conscrypt/conscrypt-openjdk-uber/2.5.2/conscrypt-openjdk-uber-2.5.2.jar, /home/longz/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar, /home/longz/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar, /home/longz/.m2/repository/io/grpc/grpc-core/1.51.1/grpc-core-1.51.1.jar, /home/longz/.m2/repository/org/jspecify/jspecify/0.2.0/jspecify-0.2.0.jar, /home/longz/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar]
+[DEBUG]   (f) compileSourceRoots = [/home/longz/microservice-trace/spring/trace_demo/trace-service-one/src/main/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) createMissingPackageInfoClass = true
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) debugFileName = javac
+[DEBUG]   (f) enablePreview = false
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) failOnWarning = false
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = /home/longz/microservice-trace/spring/trace_demo/trace-service-one/target/generated-sources/annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.10.1:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /home/longz/microservice-trace/spring/trace_demo/trace-service-one/target/classes
+[DEBUG]   (f) parameters = true
+[DEBUG]   (f) project = MavenProject: com.example:demo:0.0.1-SNAPSHOT @ /home/longz/microservice-trace/spring/trace_demo/trace-service-one/pom.xml
+[DEBUG]   (f) projectArtifact = com.example:demo:jar:0.0.1-SNAPSHOT
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@47af099e
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 17
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (s) target = 17
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Adding /home/longz/microservice-trace/spring/trace_demo/trace-service-one/target/generated-sources/annotations to compile source roots:
+  /home/longz/microservice-trace/spring/trace_demo/trace-service-one/src/main/java
+[DEBUG] New compile source roots:
+  /home/longz/microservice-trace/spring/trace_demo/trace-service-one/src/main/java
+  /home/longz/microservice-trace/spring/trace_demo/trace-service-one/target/generated-sources/annotations
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:3.2.0:testResources (default-testResources) @ demo ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:3.2.0:testResources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:3.2.0, parent: java.net.URLClassLoader@3d646c37]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:3.2.0:testResources' with basic configurator -->
+[DEBUG]   (f) addDefaultExcludes = true
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (s) delimiters = [@]
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (f) fileNameFiltering = false
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /home/longz/microservice-trace/spring/trace_demo/trace-service-one/target/test-classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.example:demo:0.0.1-SNAPSHOT @ /home/longz/microservice-trace/spring/trace_demo/trace-service-one/pom.xml
+[DEBUG]   (f) propertiesEncoding = UTF-8
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: /home/longz/microservice-trace/spring/trace_demo/trace-service-one/src/test/resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@47af099e
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = false
+[DEBUG] -- end configuration --
+[DEBUG] properties used {spring-integration.version=5.5.15, flyway.version=8.5.13, env.DEVSHELL_CLIENTS_DIR=/var/run/google/devshell, java.specification.version=17, env.GOOGLE_CLOUD_SHELL=true, glassfish-jstl.version=1.2.6, env.GEM_HOME=/home/longz/.gems, java.vendor.url=https://tracker.debian.org/openjdk-17, sun.boot.library.path=/usr/lib/jvm/java-17-openjdk-amd64/lib, sun.java.command=org.apache.maven.wrapper.MavenWrapperMain -DskipTests -X spring-boot:run, jdk.debug=release, maven.version=3.8.6, env.USE_GKE_GCLOUD_AUTH_PLUGIN=True, javax-activation.version=1.2.0, kafka.version=3.1.2, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, byte-buddy.version=1.12.19, maven-install-plugin.version=2.5.2, java.runtime.version=17.0.6+10-Debian-1deb11u1, httpclient5.version=5.1.4, env.CLOUD_SHELL=true, micrometer.version=1.9.6, rxjava-adapter.version=1.2.1, project.baseUri=file:/home/longz/microservice-trace/spring/trace_demo/trace-service-one/, hibernate.version=5.6.14.Final, java.io.tmpdir=/tmp, java.version=17.0.6, javax-persistence.version=2.2, jakarta-ws-rs.version=2.1.6, build-helper-maven-plugin.version=3.3.0, mockito.version=4.5.1, java.vm.specification.name=Java Virtual Machine Specification, infinispan.version=13.0.12.Final, nekohtml.version=1.9.22, maven-assembly-plugin.version=3.3.0, native.encoding=UTF-8, java.library.path=/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib, jakarta-servlet.version=4.0.4, java.vendor=Debian, thymeleaf-extras-java8time.version=3.0.4.RELEASE, undertow.version=2.2.20.Final, mariadb.version=3.0.9, selenium-htmlunit.version=3.61.0, thymeleaf-extras-data-attribute.version=2.0.1, ehcache3.version=3.10.8, jakarta-xml-bind.version=2.3.3, commons-dbcp2.version=2.9.0, env.LANG=en_US.UTF-8, mongodb.version=4.6.1, env.BROWSER=echo, env.CLOUDSDK_DIAGNOSTICS_HIDDEN_PROPERTY_WHITELIST=compute/gce_metadata_read_timeout_sec, java.vm.specification.version=17, env.WEB_HOST=cs-585904490940-default.cs-asia-east1-jnrc.cloudshell.dev, javax-transaction.version=1.3, maven.compiler.source=17, user.home=/home/longz, postgresql.version=42.3.8, reactive-streams.version=1.0.4, jmustache.version=1.15, querydsl.version=5.0.0, appengine-sdk.version=1.9.98, thymeleaf-layout-dialect.version=3.0.0, hamcrest.version=2.2, os.version=5.15.65+, commons-pool.version=1.6, env.GEM_PATH=/home/longz/.gems:/usr/local/lib/ruby/gems/2.7.0/, jakarta-jms.version=2.0.3, jakarta-transaction.version=1.3.3, java.vm.name=OpenJDK 64-Bit Server VM, maven-help-plugin.version=3.2.0, json-path.version=2.7.0, jaxen.version=1.2.0, johnzon.version=1.2.19, env.TMUX_PANE=%0, env.DEVSHELL_SERVER_URL=https://ssh.cloud.google.com, os.arch=amd64, spring-batch.version=4.3.7, couchbase-client.version=3.3.4, derby.version=10.14.2.0, env.PROMPT_COMMAND=history -a;update_devshell_project_id &> /dev/null, env.USE_CLOUD_SDK_PYTHON3=, javax-jsonb.version=1.0, spring-cloud-gcp.version=3.4.2, rxjava2.version=2.2.21, javax-jaxws.version=2.3.1, json-smart.version=2.4.8, javax-websocket.version=1.1, commons-codec.version=1.15, caffeine.version=2.9.3, h2.version=2.1.214, env.JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64, java.vm.compressedOopsMode=Zero based, env.V2V_GCP_V2V_IMAGE=projects/v2v-community/global/images/family/v2v-stable, env.ACTIVE_CUSTOM_IMAGE=, cache2k.version=2.6.1.Final, pooled-jms.version=1.2.4, unboundid-ldapsdk.version=6.0.6, thymeleaf-extras-springsecurity.version=3.0.4.RELEASE, javax-jaxb.version=2.3.1, sqlite-jdbc.version=3.36.0.3, jakarta-servlet-jsp-jstl.version=1.2.7, activemq.version=5.16.5, httpasyncclient.version=4.1.5, env.CUSTOM_ENVIRONMENT=, jtds.version=1.3.1, javax-jms.version=2.0.1, jakarta-websocket.version=1.1.2, env.LOGNAME=longz, spring-security.version=5.7.5, hibernate-validator.version=6.2.5.Final, assertj.version=3.22.0, jakarta-xml-soap.version=1.4.2, influxdb-java.version=2.22, env.DEVSHELL_IP_ADDRESS=, httpcore5.version=5.1.5, lombok.version=1.18.24, maven.compiler.target=17, jakarta-xml-ws.version=2.3.3, commons-pool2.version=2.11.1, jackson-bom.version=2.13.4.20221013, spring-retry.version=1.3.4, maven-invoker-plugin.version=3.2.2, maven-antrun-plugin.version=3.0.0, maven.conf=/home/longz/.m2/wrapper/dists/apache-maven-3.8.6-bin/1ks0nkde5v1pk9vtc31i9d0lcd/apache-maven-3.8.6/conf, sun.java.launcher=SUN_STANDARD, user.country=US, resource.delimiter=@, javax-json.version=1.1.4, jboss-logging.version=3.4.3.Final, env.CLOUDSDK_PYTHON=python3, maven-resources-plugin.version=3.2.0, javax-validation.version=2.0.1.Final, netty.version=4.1.85.Final, jetty-jsp.version=2.2.0.v201112011158, maven-source-plugin.version=3.2.1, jetty.version=9.4.49.v20220914, rxjava.version=1.3.8, env.CLOUDSDK_CONFIG=/tmp/tmp.vIBEzIDQmz, env.MINIKUBE_FORCE_SYSTEMD=true, elasticsearch.version=7.17.7, env.GOOGLE_CLOUD_PROJECT=longz-prem-bd, java.runtime.name=OpenJDK Runtime Environment, rest-assured.version=4.5.1, maven-deploy-plugin.version=2.8.2, env.MAVEN_CMD_LINE_ARGS= -DskipTests -X spring-boot:run, log4j2.version=2.17.2, maven-failsafe-plugin.version=2.22.2, spring-framework.version=5.3.24, dropwizard-metrics.version=4.2.13, git-commit-id-plugin.version=4.9.10, env.TMUX=/tmp/tmux-1000/default,512,0, kotlin-coroutines.version=1.6.4, hazelcast-hibernate5.version=2.2.1, htmlunit.version=2.60.0, env.TERM=screen, env.MINIKUBE_WANTUPDATENOTIFICATION=false, sun.arch.data.model=64, spring-restdocs.version=2.0.7.RELEASE, freemarker.version=2.3.31, env.ASPNETCORE_URLS=http://*:8080, thymeleaf.version=3.0.15.RELEASE, jakarta-json.version=1.1.6, janino.version=3.1.9, env.GOPATH=/home/longz/gopath:/google/gopath, maven-jar-plugin.version=3.2.2, maven-compiler-plugin.version=3.10.1, java.specification.vendor=Oracle Corporation, rabbit-amqp-client.version=5.14.2, java.version.date=2023-01-17, spring-amqp.version=2.4.8, java.home=/usr/lib/jvm/java-17-openjdk-amd64, env.DEVSHELL_PROJECT_ID=longz-prem-bd, env.DOCKER_HOST=unix:///var/run/docker.sock, maven-war-plugin.version=3.3.2, jolokia.version=1.7.1, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, jetty-reactive-httpclient.version=1.1.13, env.PATH=/home/longz/.local/bin:/opt/gradle/bin:/opt/maven/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/go/bin:/usr/local/nvm/versions/node/v18.12.1/bin:/usr/local/rvm/bin:/google/go_appengine:/google/google_appengine:/google/migrate/anthos/:/home/longz/.gems/bin:/usr/local/rvm/bin:/home/longz/gopath/bin:/google/gopath/bin:/google/flutter/bin, env.CREDENTIALS_SERVICE_PORT=8998, maven-dependency-plugin.version=3.3.0, httpclient.version=4.5.13, env.LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:, jsonassert.version=1.5.1, file.encoding=UTF-8, gson.version=2.9.1, sun-mail.version=1.6.7, jakarta-annotation.version=1.3.5, env.SHLVL=3, env.MINIKUBE_HOME=/google/minikube, mssql-jdbc.version=10.2.1.jre8, snakeyaml.version=1.30, env.__TMP_CLOUDSDK_CONFIG=/tmp/tmp.vIBEzIDQmz, liquibase.version=4.9.1, prometheus-client.version=0.15.0, httpcore.version=4.4.15, lettuce.version=6.1.10.RELEASE, classworlds.conf=/home/longz/.m2/wrapper/dists/apache-maven-3.8.6-bin/1ks0nkde5v1pk9vtc31i9d0lcd/apache-maven-3.8.6/bin/m2.conf, sun.io.unicode.encoding=UnicodeLittle, env.USER_EMAIL=longz@premium-cloud-support.com, kotlin.version=1.6.21, wsdl4j.version=1.6.3, jakarta-management.version=1.1.4, env.GOOGLE_CLOUD_QUOTA_PROJECT=longz-prem-bd, tomcat.version=9.0.69, sendgrid.version=4.9.3, env.SSH_CLIENT=127.0.0.1 34662 22, glassfish-jaxb.version=2.3.7, spring-ws.version=3.1.4, commons-lang3.version=3.12.0, os.name=Linux, junit.version=4.13.2, jetty-el.version=9.0.52, db2-jdbc.version=11.5.7.0, env.DEVSHELL_GCLOUD_CONFIG=cloudshell-2677, maven.build.timestamp=2023-02-17T13:59:11Z, env.SSH_CONNECTION=127.0.0.1 34662 127.0.0.1 22, reactor-bom.version=2020.0.25, maven-enforcer-plugin.version=3.0.0, jstl.version=1.2, spring-graphql.version=1.0.3, quartz.version=2.3.2, javax-money.version=1.1, graphql-java.version=18.3, spring-hateoas.version=1.5.2, path.separator=:, env.SHELL=/bin/bash, jakarta-validation.version=2.0.2, env.HISTSIZE=1000, env.HISTFILESIZE=1000, maven.multiModuleProjectDirectory=/home/longz/microservice-trace/spring/trace_demo/trace-service-one, oracle-database.version=21.5.0.0, env.API_DOGFOOD=, env.MAVEN_PROJECTBASEDIR=/home/longz/microservice-trace/spring/trace_demo/trace-service-one, java.vm.info=mixed mode, sharing, cassandra-driver.version=4.14.1, env.CLOUDSDK_DIAGNOSTICS_HIDDEN_PROPERTY_ALLOWLIST=compute/gce_metadata_read_timeout_sec, env.USER=longz, java.class.version=61.0, xml-maven-plugin.version=1.0.2, env.BASHRC_GOOGLE_PATH=/google/devshell/bashrc.google, sun.jnu.encoding=UTF-8, spring-cloud.version=2021.0.5, xmlunit2.version=2.9.0, jakarta-mail.version=1.6.7, okhttp.version=4.9.3, slf4j.version=1.7.36, r2dbc-bom.version=Borca-SR2, env.CLOUDSHELL_ENVIRONMENT=prod, solr.version=8.11.2, env.CLOUDSHELL_OPEN_DIR=cloudshell_open, saaj-impl.version=1.5.3, maven.build.version=Apache Maven 3.8.6 (84538c9988a25aec085021c365c560670ad80f63), hikaricp.version=4.0.3, maven.home=/home/longz/.m2/wrapper/dists/apache-maven-3.8.6-bin/1ks0nkde5v1pk9vtc31i9d0lcd/apache-maven-3.8.6, maven-shade-plugin.version=3.3.0, sun.stderr.encoding=UTF-8, env.DOTNET_SKIP_FIRST_TIME_EXPERIENCE=1, jakarta-json-bind.version=1.0.2, file.separator=/, line.separator=
+, env.SSH_TTY=/dev/pts/1, spring-kafka.version=2.8.11, jersey.version=2.35, user.name=longz, hazelcast.version=5.1.5, jdom2.version=2.0.6.1, atomikos.version=4.0.6, aspectj.version=1.9.7, env.BASHRC_PATH=/home/longz/.bashrc, hsqldb.version=2.5.2, webjars-locator-core.version=0.50, project.reporting.outputEncoding=UTF-8, awaitility.version=4.2.0, env.OLDPWD=/home/longz/microservice-trace/spring/trace_demo/trace-service-one, env.PWD=/home/longz/microservice-trace/spring/trace_demo/trace-service-one, embedded-mongo.version=3.4.11, spring-ldap.version=2.4.1, java.class.path=/home/longz/microservice-trace/spring/trace_demo/trace-service-one/.mvn/wrapper/maven-wrapper.jar, dependency-management-plugin.version=1.0.15.RELEASE, env.HOME=/home/longz, java.vm.vendor=Debian, rabbit-stream-client.version=0.5.0, maven-javadoc-plugin.version=3.4.1, servlet-api.version=4.0.1, rsocket.version=1.1.3, jakarta-persistence.version=2.2.3, artemis.version=2.19.1, groovy.version=3.0.13, javax-cache.version=1.1.1, logback.version=1.2.11, env.GCE_METADATA_HOST=169.254.169.254, sun.cpu.endian=little, versions-maven-plugin.version=2.10.0, user.language=en, jedis.version=3.8.0, maven-clean-plugin.version=3.2.0, env.TRUSTED_ENVIRONMENT=true, javax-mail.version=1.6.2, maven-surefire-plugin.version=2.22.2, javax-annotation.version=1.3.2, spring-data-bom.version=2021.2.6, mysql.version=8.0.31, classmate.version=1.5.1, jaybird.version=4.0.7.java8, antlr2.version=2.7.7, env.CLOUD_SHELL_IMAGE_VERSION=, selenium.version=4.1.4, glassfish-el.version=3.0.4, project.build.sourceEncoding=UTF-8, skipTests=true, jooq.version=3.14.16, java.vendor.url.bug=https://bugs.debian.org/openjdk-17, user.dir=/home/longz/microservice-trace/spring/trace_demo/trace-service-one, ehcache.version=2.10.9.2, junit-jupiter.version=5.8.2, java.vm.version=17.0.6+10-Debian-1deb11u1, neo4j-java-driver.version=4.4.9, jakarta-activation.version=1.2.2, spring-session-bom.version=2021.2.0}
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[DEBUG] resource with targetPath null
+directory /home/longz/microservice-trace/spring/trace_demo/trace-service-one/src/test/resources
+excludes []
+includes []
+[INFO] skip non existing resourceDirectory /home/longz/microservice-trace/spring/trace_demo/trace-service-one/src/test/resources
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.10.1:testCompile (default-testCompile) @ demo ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.10.1:testCompile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.10.1, parent: java.net.URLClassLoader@3d646c37]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.10.1:testCompile' with basic configurator -->
+[DEBUG]   (f) basedir = /home/longz/microservice-trace/spring/trace_demo/trace-service-one
+[DEBUG]   (f) buildDirectory = /home/longz/microservice-trace/spring/trace_demo/trace-service-one/target
+[DEBUG]   (f) compileSourceRoots = [/home/longz/microservice-trace/spring/trace_demo/trace-service-one/src/test/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) createMissingPackageInfoClass = true
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) debugFileName = javac-test
+[DEBUG]   (f) enablePreview = false
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) failOnWarning = false
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedTestSourcesDirectory = /home/longz/microservice-trace/spring/trace_demo/trace-service-one/target/generated-test-sources/test-annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.10.1:testCompile {execution: default-testCompile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /home/longz/microservice-trace/spring/trace_demo/trace-service-one/target/test-classes
+[DEBUG]   (f) parameters = true
+[DEBUG]   (f) project = MavenProject: com.example:demo:0.0.1-SNAPSHOT @ /home/longz/microservice-trace/spring/trace_demo/trace-service-one/pom.xml
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@47af099e
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 17
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (s) target = 17
+[DEBUG]   (f) testPath = [/home/longz/microservice-trace/spring/trace_demo/trace-service-one/target/test-classes, /home/longz/microservice-trace/spring/trace_demo/trace-service-one/target/classes, /home/longz/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.7.6/spring-boot-starter-web-2.7.6.jar, /home/longz/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.7.6/spring-boot-starter-json-2.7.6.jar, /home/longz/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.4.2/jackson-databind-2.13.4.2.jar, /home/longz/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.4/jackson-annotations-2.13.4.jar, /home/longz/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.4/jackson-core-2.13.4.jar, /home/longz/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.13.4/jackson-datatype-jdk8-2.13.4.jar, /home/longz/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.4/jackson-datatype-jsr310-2.13.4.jar, /home/longz/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.13.4/jackson-module-parameter-names-2.13.4.jar, /home/longz/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.7.6/spring-boot-starter-tomcat-2.7.6.jar, /home/longz/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.69/tomcat-embed-core-9.0.69.jar, /home/longz/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.69/tomcat-embed-el-9.0.69.jar, /home/longz/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.69/tomcat-embed-websocket-9.0.69.jar, /home/longz/.m2/repository/org/springframework/spring-web/5.3.24/spring-web-5.3.24.jar, /home/longz/.m2/repository/org/springframework/spring-beans/5.3.24/spring-beans-5.3.24.jar, /home/longz/.m2/repository/org/springframework/spring-webmvc/5.3.24/spring-webmvc-5.3.24.jar, /home/longz/.m2/repository/org/springframework/spring-aop/5.3.24/spring-aop-5.3.24.jar, /home/longz/.m2/repository/org/springframework/spring-context/5.3.24/spring-context-5.3.24.jar, /home/longz/.m2/repository/org/springframework/spring-expression/5.3.24/spring-expression-5.3.24.jar, /home/longz/.m2/repository/org/springframework/boot/spring-boot-starter/2.7.6/spring-boot-starter-2.7.6.jar, /home/longz/.m2/repository/org/springframework/boot/spring-boot/2.7.6/spring-boot-2.7.6.jar, /home/longz/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.7.6/spring-boot-autoconfigure-2.7.6.jar, /home/longz/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar, /home/longz/.m2/repository/org/springframework/spring-core/5.3.24/spring-core-5.3.24.jar, /home/longz/.m2/repository/org/springframework/spring-jcl/5.3.24/spring-jcl-5.3.24.jar, /home/longz/.m2/repository/org/yaml/snakeyaml/1.30/snakeyaml-1.30.jar, /home/longz/.m2/repository/org/springframework/boot/spring-boot-starter-log4j2/2.7.6/spring-boot-starter-log4j2-2.7.6.jar, /home/longz/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.2/log4j-core-2.17.2.jar, /home/longz/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2.jar, /home/longz/.m2/repository/org/apache/logging/log4j/log4j-jul/2.17.2/log4j-jul-2.17.2.jar, /home/longz/.m2/repository/org/slf4j/jul-to-slf4j/1.7.36/jul-to-slf4j-1.7.36.jar, /home/longz/.m2/repository/com/google/cloud/spring-cloud-gcp-starter/3.4.2/spring-cloud-gcp-starter-3.4.2.jar, /home/longz/.m2/repository/com/google/cloud/spring-cloud-gcp-core/3.4.2/spring-cloud-gcp-core-3.4.2.jar, /home/longz/.m2/repository/com/google/cloud/google-cloud-core/2.9.1/google-cloud-core-2.9.1.jar, /home/longz/.m2/repository/com/google/auto/value/auto-value-annotations/1.10.1/auto-value-annotations-1.10.1.jar, /home/longz/.m2/repository/com/google/protobuf/protobuf-java-util/3.21.12/protobuf-java-util-3.21.12.jar, /home/longz/.m2/repository/com/google/api/grpc/proto-google-common-protos/2.12.0/proto-google-common-protos-2.12.0.jar, /home/longz/.m2/repository/com/google/api/grpc/proto-google-iam-v1/1.7.0/proto-google-iam-v1-1.7.0.jar, /home/longz/.m2/repository/org/threeten/threetenbp/1.6.5/threetenbp-1.6.5.jar, /home/longz/.m2/repository/com/google/auth/google-auth-library-oauth2-http/1.14.0/google-auth-library-oauth2-http-1.14.0.jar, /home/longz/.m2/repository/com/google/http-client/google-http-client-gson/1.42.3/google-http-client-gson-1.42.3.jar, /home/longz/.m2/repository/com/google/protobuf/protobuf-java/3.21.12/protobuf-java-3.21.12.jar, /home/longz/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar, /home/longz/.m2/repository/com/google/cloud/spring-cloud-gcp-autoconfigure/3.4.2/spring-cloud-gcp-autoconfigure-3.4.2.jar, /home/longz/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar, /home/longz/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar, /home/longz/.m2/repository/org/springframework/cloud/spring-cloud-starter-sleuth/3.1.5/spring-cloud-starter-sleuth-3.1.5.jar, /home/longz/.m2/repository/org/springframework/cloud/spring-cloud-starter/3.1.5/spring-cloud-starter-3.1.5.jar, /home/longz/.m2/repository/org/springframework/cloud/spring-cloud-context/3.1.5/spring-cloud-context-3.1.5.jar, /home/longz/.m2/repository/org/springframework/security/spring-security-crypto/5.7.5/spring-security-crypto-5.7.5.jar, /home/longz/.m2/repository/org/springframework/cloud/spring-cloud-commons/3.1.5/spring-cloud-commons-3.1.5.jar, /home/longz/.m2/repository/org/springframework/security/spring-security-rsa/1.0.11.RELEASE/spring-security-rsa-1.0.11.RELEASE.jar, /home/longz/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.69/bcpkix-jdk15on-1.69.jar, /home/longz/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.69/bcprov-jdk15on-1.69.jar, /home/longz/.m2/repository/org/bouncycastle/bcutil-jdk15on/1.69/bcutil-jdk15on-1.69.jar, /home/longz/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.7.6/spring-boot-starter-aop-2.7.6.jar, /home/longz/.m2/repository/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar, /home/longz/.m2/repository/org/springframework/cloud/spring-cloud-sleuth-autoconfigure/3.1.5/spring-cloud-sleuth-autoconfigure-3.1.5.jar, /home/longz/.m2/repository/org/springframework/cloud/spring-cloud-sleuth-instrumentation/3.1.5/spring-cloud-sleuth-instrumentation-3.1.5.jar, /home/longz/.m2/repository/org/springframework/cloud/spring-cloud-sleuth-api/3.1.5/spring-cloud-sleuth-api-3.1.5.jar, /home/longz/.m2/repository/org/aspectj/aspectjrt/1.9.7/aspectjrt-1.9.7.jar, /home/longz/.m2/repository/org/springframework/cloud/spring-cloud-sleuth-brave/3.1.5/spring-cloud-sleuth-brave-3.1.5.jar, /home/longz/.m2/repository/io/zipkin/brave/brave/5.13.9/brave-5.13.9.jar, /home/longz/.m2/repository/io/zipkin/brave/brave-context-slf4j/5.13.9/brave-context-slf4j-5.13.9.jar, /home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-messaging/5.13.9/brave-instrumentation-messaging-5.13.9.jar, /home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-rpc/5.13.9/brave-instrumentation-rpc-5.13.9.jar, /home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-spring-rabbit/5.13.9/brave-instrumentation-spring-rabbit-5.13.9.jar, /home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-kafka-clients/5.13.9/brave-instrumentation-kafka-clients-5.13.9.jar, /home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-kafka-streams/5.13.9/brave-instrumentation-kafka-streams-5.13.9.jar, /home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-httpclient/5.13.9/brave-instrumentation-httpclient-5.13.9.jar, /home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-http/5.13.9/brave-instrumentation-http-5.13.9.jar, /home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-httpasyncclient/5.13.9/brave-instrumentation-httpasyncclient-5.13.9.jar, /home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-jms/5.13.9/brave-instrumentation-jms-5.13.9.jar, /home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-mongodb/5.13.9/brave-instrumentation-mongodb-5.13.9.jar, /home/longz/.m2/repository/io/zipkin/aws/brave-propagation-aws/0.21.3/brave-propagation-aws-0.21.3.jar, /home/longz/.m2/repository/io/zipkin/reporter2/zipkin-reporter-metrics-micrometer/2.16.3/zipkin-reporter-metrics-micrometer-2.16.3.jar, /home/longz/.m2/repository/com/google/cloud/spring-cloud-gcp-starter-trace/3.4.2/spring-cloud-gcp-starter-trace-3.4.2.jar, /home/longz/.m2/repository/io/zipkin/gcp/zipkin-sender-stackdriver/1.0.4/zipkin-sender-stackdriver-1.0.4.jar, /home/longz/.m2/repository/io/zipkin/gcp/zipkin-translation-stackdriver/1.0.4/zipkin-translation-stackdriver-1.0.4.jar, /home/longz/.m2/repository/com/google/api/grpc/proto-google-cloud-trace-v2/2.8.0/proto-google-cloud-trace-v2-2.8.0.jar, /home/longz/.m2/repository/io/zipkin/reporter2/zipkin-reporter/2.16.3/zipkin-reporter-2.16.3.jar, /home/longz/.m2/repository/io/zipkin/zipkin2/zipkin/2.23.2/zipkin-2.23.2.jar, /home/longz/.m2/repository/com/google/api/grpc/grpc-google-cloud-trace-v2/2.8.0/grpc-google-cloud-trace-v2-2.8.0.jar, /home/longz/.m2/repository/io/grpc/grpc-context/1.51.1/grpc-context-1.51.1.jar, /home/longz/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar, /home/longz/.m2/repository/io/grpc/grpc-stub/1.51.1/grpc-stub-1.51.1.jar, /home/longz/.m2/repository/io/grpc/grpc-protobuf-lite/1.51.1/grpc-protobuf-lite-1.51.1.jar, /home/longz/.m2/repository/com/google/auto/value/auto-value/1.10.1/auto-value-1.10.1.jar, /home/longz/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar, /home/longz/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar, /home/longz/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar, /home/longz/.m2/repository/org/checkerframework/checker-qual/3.29.0/checker-qual-3.29.0.jar, /home/longz/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar, /home/longz/.m2/repository/io/zipkin/gcp/brave-propagation-stackdriver/1.0.4/brave-propagation-stackdriver-1.0.4.jar, /home/longz/.m2/repository/com/google/cloud/google-cloud-core-grpc/2.9.1/google-cloud-core-grpc-2.9.1.jar, /home/longz/.m2/repository/com/google/auth/google-auth-library-credentials/1.14.0/google-auth-library-credentials-1.14.0.jar, /home/longz/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar, /home/longz/.m2/repository/com/google/api/gax/2.21.0/gax-2.21.0.jar, /home/longz/.m2/repository/io/opencensus/opencensus-api/0.31.1/opencensus-api-0.31.1.jar, /home/longz/.m2/repository/com/google/api/gax-grpc/2.21.0/gax-grpc-2.21.0.jar, /home/longz/.m2/repository/io/grpc/grpc-alts/1.51.1/grpc-alts-1.51.1.jar, /home/longz/.m2/repository/io/grpc/grpc-auth/1.51.1/grpc-auth-1.51.1.jar, /home/longz/.m2/repository/io/grpc/grpc-protobuf/1.51.1/grpc-protobuf-1.51.1.jar, /home/longz/.m2/repository/io/grpc/grpc-netty-shaded/1.51.1/grpc-netty-shaded-1.51.1.jar, /home/longz/.m2/repository/io/grpc/grpc-googleapis/1.51.1/grpc-googleapis-1.51.1.jar, /home/longz/.m2/repository/com/google/api/api-common/2.4.0/api-common-2.4.0.jar, /home/longz/.m2/repository/io/grpc/grpc-api/1.51.1/grpc-api-1.51.1.jar, /home/longz/.m2/repository/com/google/http-client/google-http-client/1.42.3/google-http-client-1.42.3.jar, /home/longz/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar, /home/longz/.m2/repository/org/apache/httpcomponents/httpcore/4.4.15/httpcore-4.4.15.jar, /home/longz/.m2/repository/io/opencensus/opencensus-contrib-http-util/0.31.1/opencensus-contrib-http-util-0.31.1.jar, /home/longz/.m2/repository/io/zipkin/reporter2/zipkin-reporter-brave/2.16.3/zipkin-reporter-brave-2.16.3.jar, /home/longz/.m2/repository/com/google/cloud/spring-cloud-gcp-starter-logging/3.4.2/spring-cloud-gcp-starter-logging-3.4.2.jar, /home/longz/.m2/repository/com/google/cloud/spring-cloud-gcp-logging/3.4.2/spring-cloud-gcp-logging-3.4.2.jar, /home/longz/.m2/repository/ch/qos/logback/contrib/logback-json-classic/0.1.5/logback-json-classic-0.1.5.jar, /home/longz/.m2/repository/ch/qos/logback/logback-classic/1.2.11/logback-classic-1.2.11.jar, /home/longz/.m2/repository/ch/qos/logback/contrib/logback-json-core/0.1.5/logback-json-core-0.1.5.jar, /home/longz/.m2/repository/com/google/cloud/google-cloud-logging-logback/0.130.0-alpha/google-cloud-logging-logback-0.130.0-alpha.jar, /home/longz/.m2/repository/ch/qos/logback/logback-core/1.2.11/logback-core-1.2.11.jar, /home/longz/.m2/repository/com/google/cloud/google-cloud-logging/3.14.1/google-cloud-logging-3.14.1.jar, /home/longz/.m2/repository/com/google/code/gson/gson/2.9.1/gson-2.9.1.jar, /home/longz/.m2/repository/com/google/api/grpc/proto-google-cloud-logging-v2/0.103.1/proto-google-cloud-logging-v2-0.103.1.jar, /home/longz/.m2/repository/io/grpc/grpc-grpclb/1.51.1/grpc-grpclb-1.51.1.jar, /home/longz/.m2/repository/org/conscrypt/conscrypt-openjdk-uber/2.5.2/conscrypt-openjdk-uber-2.5.2.jar, /home/longz/.m2/repository/io/grpc/grpc-xds/1.51.1/grpc-xds-1.51.1.jar, /home/longz/.m2/repository/io/opencensus/opencensus-proto/0.2.0/opencensus-proto-0.2.0.jar, /home/longz/.m2/repository/io/grpc/grpc-services/1.51.1/grpc-services-1.51.1.jar, /home/longz/.m2/repository/com/google/re2j/re2j/1.6/re2j-1.6.jar, /home/longz/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar, /home/longz/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar, /home/longz/.m2/repository/io/grpc/grpc-core/1.51.1/grpc-core-1.51.1.jar, /home/longz/.m2/repository/com/google/android/annotations/4.1.1.4/annotations-4.1.1.4.jar, /home/longz/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.22/animal-sniffer-annotations-1.22.jar, /home/longz/.m2/repository/io/perfmark/perfmark-api/0.26.0/perfmark-api-0.26.0.jar, /home/longz/.m2/repository/org/jspecify/jspecify/0.2.0/jspecify-0.2.0.jar, /home/longz/.m2/repository/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar, /home/longz/.m2/repository/org/springframework/boot/spring-boot-starter-test/2.7.6/spring-boot-starter-test-2.7.6.jar, /home/longz/.m2/repository/org/springframework/boot/spring-boot-test/2.7.6/spring-boot-test-2.7.6.jar, /home/longz/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/2.7.6/spring-boot-test-autoconfigure-2.7.6.jar, /home/longz/.m2/repository/com/jayway/jsonpath/json-path/2.7.0/json-path-2.7.0.jar, /home/longz/.m2/repository/net/minidev/json-smart/2.4.8/json-smart-2.4.8.jar, /home/longz/.m2/repository/net/minidev/accessors-smart/2.4.8/accessors-smart-2.4.8.jar, /home/longz/.m2/repository/org/ow2/asm/asm/9.1/asm-9.1.jar, /home/longz/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar, /home/longz/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar, /home/longz/.m2/repository/org/assertj/assertj-core/3.22.0/assertj-core-3.22.0.jar, /home/longz/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar, /home/longz/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar, /home/longz/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar, /home/longz/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar, /home/longz/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar, /home/longz/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar, /home/longz/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.2/junit-jupiter-params-5.8.2.jar, /home/longz/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar, /home/longz/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar, /home/longz/.m2/repository/org/mockito/mockito-core/4.5.1/mockito-core-4.5.1.jar, /home/longz/.m2/repository/net/bytebuddy/byte-buddy/1.12.19/byte-buddy-1.12.19.jar, /home/longz/.m2/repository/net/bytebuddy/byte-buddy-agent/1.12.19/byte-buddy-agent-1.12.19.jar, /home/longz/.m2/repository/org/objenesis/objenesis/3.2/objenesis-3.2.jar, /home/longz/.m2/repository/org/mockito/mockito-junit-jupiter/4.5.1/mockito-junit-jupiter-4.5.1.jar, /home/longz/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar, /home/longz/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar, /home/longz/.m2/repository/org/springframework/spring-test/5.3.24/spring-test-5.3.24.jar, /home/longz/.m2/repository/org/xmlunit/xmlunit-core/2.9.0/xmlunit-core-2.9.0.jar]
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Adding /home/longz/microservice-trace/spring/trace_demo/trace-service-one/target/generated-test-sources/test-annotations to test-compile source roots:
+  /home/longz/microservice-trace/spring/trace_demo/trace-service-one/src/test/java
+[DEBUG] New test-compile source roots:
+  /home/longz/microservice-trace/spring/trace_demo/trace-service-one/src/test/java
+  /home/longz/microservice-trace/spring/trace_demo/trace-service-one/target/generated-test-sources/test-annotations
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:2.7.6:run (default-cli) < test-compile @ demo <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.7.6:run (default-cli) @ demo ---
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=245129, ConflictMarker.markTime=152689, ConflictMarker.nodeCount=134, ConflictIdSorter.graphTime=74978, ConflictIdSorter.topsortTime=108038, ConflictIdSorter.conflictIdCount=63, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1633206, ConflictResolver.conflictItemCount=126, DefaultDependencyCollector.collectTime=115827485, DefaultDependencyCollector.transformTime=2301967}
+[DEBUG] org.springframework.boot:spring-boot-maven-plugin:jar:2.7.6
+[DEBUG]    org.springframework.boot:spring-boot-buildpack-platform:jar:2.7.6:runtime
+[DEBUG]       com.fasterxml.jackson.core:jackson-databind:jar:2.13.4.2:runtime
+[DEBUG]          com.fasterxml.jackson.core:jackson-annotations:jar:2.13.4:runtime
+[DEBUG]          com.fasterxml.jackson.core:jackson-core:jar:2.13.4:runtime
+[DEBUG]       com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.13.4:runtime
+[DEBUG]       net.java.dev.jna:jna-platform:jar:5.7.0:runtime
+[DEBUG]          net.java.dev.jna:jna:jar:5.7.0:runtime
+[DEBUG]       org.apache.commons:commons-compress:jar:1.21:runtime
+[DEBUG]       org.apache.httpcomponents:httpclient:jar:4.5.13:runtime
+[DEBUG]          org.apache.httpcomponents:httpcore:jar:4.4.13:runtime
+[DEBUG]          commons-codec:commons-codec:jar:1.11:compile
+[DEBUG]       org.springframework:spring-core:jar:5.3.24:runtime
+[DEBUG]          org.springframework:spring-jcl:jar:5.3.24:runtime
+[DEBUG]       org.tomlj:tomlj:jar:1.0.0:runtime
+[DEBUG]          org.antlr:antlr4-runtime:jar:4.7.2:runtime
+[DEBUG]          com.google.code.findbugs:jsr305:jar:3.0.2:compile
+[DEBUG]    org.springframework.boot:spring-boot-loader-tools:jar:2.7.6:runtime
+[DEBUG]    org.sonatype.plexus:plexus-build-api:jar:0.0.7:runtime
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:1.5.8:compile
+[DEBUG]    org.apache.maven.plugins:maven-shade-plugin:jar:3.2.4:compile (optional)
+[DEBUG]       org.apache.maven:maven-plugin-api:jar:3.0:compile (optional)
+[DEBUG]          org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile (optional)
+[DEBUG]             org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile (optional)
+[DEBUG]                org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile (optional)
+[DEBUG]       org.apache.maven:maven-model:jar:3.0:compile (optional)
+[DEBUG]       org.apache.maven:maven-core:jar:3.0:compile (optional)
+[DEBUG]          org.apache.maven:maven-settings:jar:3.0:compile (optional)
+[DEBUG]          org.apache.maven:maven-settings-builder:jar:3.0:compile (optional)
+[DEBUG]          org.apache.maven:maven-repository-metadata:jar:3.0:compile (optional)
+[DEBUG]          org.apache.maven:maven-model-builder:jar:3.0:compile (optional)
+[DEBUG]          org.apache.maven:maven-aether-provider:jar:3.0:runtime (optional)
+[DEBUG]          org.sonatype.aether:aether-impl:jar:1.7:compile (optional)
+[DEBUG]             org.sonatype.aether:aether-spi:jar:1.7:compile (optional)
+[DEBUG]          org.sonatype.aether:aether-api:jar:1.7:compile (optional)
+[DEBUG]          org.sonatype.aether:aether-util:jar:1.7:compile (optional)
+[DEBUG]          org.codehaus.plexus:plexus-interpolation:jar:1.14:compile (optional)
+[DEBUG]          org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile (optional)
+[DEBUG]          org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile (optional)
+[DEBUG]          org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile (optional)
+[DEBUG]             org.sonatype.plexus:plexus-cipher:jar:1.4:compile (optional)
+[DEBUG]       org.apache.maven:maven-artifact:jar:3.0:compile (optional)
+[DEBUG]       org.apache.maven.shared:maven-artifact-transfer:jar:0.12.0:compile (optional)
+[DEBUG]          org.apache.maven.shared:maven-common-artifact-filters:jar:3.0.1:compile (optional)
+[DEBUG]             org.apache.maven.shared:maven-shared-utils:jar:3.1.0:compile (optional)
+[DEBUG]          org.slf4j:slf4j-api:jar:1.7.5:compile (optional)
+[DEBUG]       org.ow2.asm:asm:jar:8.0:compile (optional)
+[DEBUG]       org.ow2.asm:asm-commons:jar:8.0:compile (optional)
+[DEBUG]          org.ow2.asm:asm-tree:jar:8.0:compile (optional)
+[DEBUG]          org.ow2.asm:asm-analysis:jar:8.0:compile (optional)
+[DEBUG]       org.jdom:jdom2:jar:2.0.6:compile (optional)
+[DEBUG]       org.apache.maven.shared:maven-dependency-tree:jar:3.0.1:compile (optional)
+[DEBUG]          org.eclipse.aether:aether-util:jar:0.9.0.M2:compile (optional)
+[DEBUG]       commons-io:commons-io:jar:2.6:compile (optional)
+[DEBUG]       org.vafer:jdependency:jar:2.4.0:compile (optional)
+[DEBUG]          org.ow2.asm:asm-util:jar:8.0:compile (optional)
+[DEBUG]       com.google.guava:guava:jar:28.2-android:compile (optional)
+[DEBUG]          com.google.guava:failureaccess:jar:1.0.1:compile (optional)
+[DEBUG]          com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:compile (optional)
+[DEBUG]          org.checkerframework:checker-compat-qual:jar:2.5.5:compile (optional)
+[DEBUG]          com.google.errorprone:error_prone_annotations:jar:2.3.4:compile (optional)
+[DEBUG]          com.google.j2objc:j2objc-annotations:jar:1.3:compile (optional)
+[DEBUG]       org.apache.commons:commons-lang3:jar:3.7:compile (optional)
+[DEBUG] Created new class realm plugin>org.springframework.boot:spring-boot-maven-plugin:2.7.6
+[DEBUG] Importing foreign packages into class realm plugin>org.springframework.boot:spring-boot-maven-plugin:2.7.6
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.springframework.boot:spring-boot-maven-plugin:2.7.6
+[DEBUG]   Included: org.springframework.boot:spring-boot-maven-plugin:jar:2.7.6
+[DEBUG]   Included: org.springframework.boot:spring-boot-buildpack-platform:jar:2.7.6
+[DEBUG]   Included: com.fasterxml.jackson.core:jackson-databind:jar:2.13.4.2
+[DEBUG]   Included: com.fasterxml.jackson.core:jackson-annotations:jar:2.13.4
+[DEBUG]   Included: com.fasterxml.jackson.core:jackson-core:jar:2.13.4
+[DEBUG]   Included: com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.13.4
+[DEBUG]   Included: net.java.dev.jna:jna-platform:jar:5.7.0
+[DEBUG]   Included: net.java.dev.jna:jna:jar:5.7.0
+[DEBUG]   Included: org.apache.commons:commons-compress:jar:1.21
+[DEBUG]   Included: org.apache.httpcomponents:httpclient:jar:4.5.13
+[DEBUG]   Included: org.apache.httpcomponents:httpcore:jar:4.4.13
+[DEBUG]   Included: commons-codec:commons-codec:jar:1.11
+[DEBUG]   Included: org.springframework:spring-core:jar:5.3.24
+[DEBUG]   Included: org.springframework:spring-jcl:jar:5.3.24
+[DEBUG]   Included: org.tomlj:tomlj:jar:1.0.0
+[DEBUG]   Included: org.antlr:antlr4-runtime:jar:4.7.2
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:3.0.2
+[DEBUG]   Included: org.springframework.boot:spring-boot-loader-tools:jar:2.7.6
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.5.8
+[DEBUG]   Included: org.apache.maven.plugins:maven-shade-plugin:jar:3.2.4
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.14
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.apache.maven.shared:maven-artifact-transfer:jar:0.12.0
+[DEBUG]   Included: org.apache.maven.shared:maven-common-artifact-filters:jar:3.0.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.1.0
+[DEBUG]   Included: org.ow2.asm:asm:jar:8.0
+[DEBUG]   Included: org.ow2.asm:asm-commons:jar:8.0
+[DEBUG]   Included: org.ow2.asm:asm-tree:jar:8.0
+[DEBUG]   Included: org.ow2.asm:asm-analysis:jar:8.0
+[DEBUG]   Included: org.jdom:jdom2:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.shared:maven-dependency-tree:jar:3.0.1
+[DEBUG]   Included: org.eclipse.aether:aether-util:jar:0.9.0.M2
+[DEBUG]   Included: commons-io:commons-io:jar:2.6
+[DEBUG]   Included: org.vafer:jdependency:jar:2.4.0
+[DEBUG]   Included: org.ow2.asm:asm-util:jar:8.0
+[DEBUG]   Included: com.google.guava:guava:jar:28.2-android
+[DEBUG]   Included: com.google.guava:failureaccess:jar:1.0.1
+[DEBUG]   Included: com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava
+[DEBUG]   Included: org.checkerframework:checker-compat-qual:jar:2.5.5
+[DEBUG]   Included: com.google.errorprone:error_prone_annotations:jar:2.3.4
+[DEBUG]   Included: com.google.j2objc:j2objc-annotations:jar:1.3
+[DEBUG]   Included: org.apache.commons:commons-lang3:jar:3.7
+[DEBUG] Configuring mojo org.springframework.boot:spring-boot-maven-plugin:2.7.6:run from plugin realm ClassRealm[plugin>org.springframework.boot:spring-boot-maven-plugin:2.7.6, parent: java.net.URLClassLoader@3d646c37]
+[DEBUG] Configuring mojo 'org.springframework.boot:spring-boot-maven-plugin:2.7.6:run' with basic configurator -->
+[DEBUG]   (f) addResources = false
+[DEBUG]   (f) agents = []
+[DEBUG]   (f) classesDirectory = /home/longz/microservice-trace/spring/trace_demo/trace-service-one/target/classes
+[DEBUG]   (f) directories = []
+[DEBUG]   (f) groupId = org.projectlombok
+[DEBUG]   (f) artifactId = lombok
+[DEBUG]   (f) excludes = [org.springframework.boot.maven.Exclude@414f13fc]
+[DEBUG]   (f) fork = true
+[DEBUG]   (f) includes = []
+[DEBUG]   (f) optimizedLaunch = true
+[DEBUG]   (f) profiles = []
+[DEBUG]   (f) project = MavenProject: com.example:demo:0.0.1-SNAPSHOT @ /home/longz/microservice-trace/spring/trace_demo/trace-service-one/pom.xml
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@47af099e
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) useTestClasspath = false
+[DEBUG] -- end configuration --
+[INFO] Attaching agents: []
+[DEBUG] JVM argument(s): -XX:TieredStopAtLevel=1
+[DEBUG] Classpath for forked process: /home/longz/microservice-trace/spring/trace_demo/trace-service-one/target/classes:/home/longz/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.4.2/jackson-databind-2.13.4.2.jar:/home/longz/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.4/jackson-annotations-2.13.4.jar:/home/longz/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.4/jackson-core-2.13.4.jar:/home/longz/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.13.4/jackson-datatype-jdk8-2.13.4.jar:/home/longz/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.13.4/jackson-datatype-jsr310-2.13.4.jar:/home/longz/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.13.4/jackson-module-parameter-names-2.13.4.jar:/home/longz/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.69/tomcat-embed-core-9.0.69.jar:/home/longz/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.69/tomcat-embed-el-9.0.69.jar:/home/longz/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.69/tomcat-embed-websocket-9.0.69.jar:/home/longz/.m2/repository/org/springframework/spring-web/5.3.24/spring-web-5.3.24.jar:/home/longz/.m2/repository/org/springframework/spring-beans/5.3.24/spring-beans-5.3.24.jar:/home/longz/.m2/repository/org/springframework/spring-webmvc/5.3.24/spring-webmvc-5.3.24.jar:/home/longz/.m2/repository/org/springframework/spring-aop/5.3.24/spring-aop-5.3.24.jar:/home/longz/.m2/repository/org/springframework/spring-context/5.3.24/spring-context-5.3.24.jar:/home/longz/.m2/repository/org/springframework/spring-expression/5.3.24/spring-expression-5.3.24.jar:/home/longz/.m2/repository/org/springframework/boot/spring-boot/2.7.6/spring-boot-2.7.6.jar:/home/longz/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.7.6/spring-boot-autoconfigure-2.7.6.jar:/home/longz/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/home/longz/.m2/repository/org/springframework/spring-core/5.3.24/spring-core-5.3.24.jar:/home/longz/.m2/repository/org/springframework/spring-jcl/5.3.24/spring-jcl-5.3.24.jar:/home/longz/.m2/repository/org/yaml/snakeyaml/1.30/snakeyaml-1.30.jar:/home/longz/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.2/log4j-core-2.17.2.jar:/home/longz/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2.jar:/home/longz/.m2/repository/org/apache/logging/log4j/log4j-jul/2.17.2/log4j-jul-2.17.2.jar:/home/longz/.m2/repository/org/slf4j/jul-to-slf4j/1.7.36/jul-to-slf4j-1.7.36.jar:/home/longz/.m2/repository/com/google/cloud/spring-cloud-gcp-starter/3.4.2/spring-cloud-gcp-starter-3.4.2.jar:/home/longz/.m2/repository/com/google/cloud/spring-cloud-gcp-core/3.4.2/spring-cloud-gcp-core-3.4.2.jar:/home/longz/.m2/repository/com/google/cloud/google-cloud-core/2.9.1/google-cloud-core-2.9.1.jar:/home/longz/.m2/repository/com/google/auto/value/auto-value-annotations/1.10.1/auto-value-annotations-1.10.1.jar:/home/longz/.m2/repository/com/google/protobuf/protobuf-java-util/3.21.12/protobuf-java-util-3.21.12.jar:/home/longz/.m2/repository/com/google/api/grpc/proto-google-common-protos/2.12.0/proto-google-common-protos-2.12.0.jar:/home/longz/.m2/repository/com/google/api/grpc/proto-google-iam-v1/1.7.0/proto-google-iam-v1-1.7.0.jar:/home/longz/.m2/repository/org/threeten/threetenbp/1.6.5/threetenbp-1.6.5.jar:/home/longz/.m2/repository/com/google/auth/google-auth-library-oauth2-http/1.14.0/google-auth-library-oauth2-http-1.14.0.jar:/home/longz/.m2/repository/com/google/http-client/google-http-client-gson/1.42.3/google-http-client-gson-1.42.3.jar:/home/longz/.m2/repository/com/google/protobuf/protobuf-java/3.21.12/protobuf-java-3.21.12.jar:/home/longz/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/longz/.m2/repository/com/google/cloud/spring-cloud-gcp-autoconfigure/3.4.2/spring-cloud-gcp-autoconfigure-3.4.2.jar:/home/longz/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/longz/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/longz/.m2/repository/org/springframework/cloud/spring-cloud-starter-sleuth/3.1.5/spring-cloud-starter-sleuth-3.1.5.jar:/home/longz/.m2/repository/org/springframework/cloud/spring-cloud-starter/3.1.5/spring-cloud-starter-3.1.5.jar:/home/longz/.m2/repository/org/springframework/cloud/spring-cloud-context/3.1.5/spring-cloud-context-3.1.5.jar:/home/longz/.m2/repository/org/springframework/security/spring-security-crypto/5.7.5/spring-security-crypto-5.7.5.jar:/home/longz/.m2/repository/org/springframework/cloud/spring-cloud-commons/3.1.5/spring-cloud-commons-3.1.5.jar:/home/longz/.m2/repository/org/springframework/security/spring-security-rsa/1.0.11.RELEASE/spring-security-rsa-1.0.11.RELEASE.jar:/home/longz/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.69/bcpkix-jdk15on-1.69.jar:/home/longz/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.69/bcprov-jdk15on-1.69.jar:/home/longz/.m2/repository/org/bouncycastle/bcutil-jdk15on/1.69/bcutil-jdk15on-1.69.jar:/home/longz/.m2/repository/org/aspectj/aspectjweaver/1.9.7/aspectjweaver-1.9.7.jar:/home/longz/.m2/repository/org/springframework/cloud/spring-cloud-sleuth-autoconfigure/3.1.5/spring-cloud-sleuth-autoconfigure-3.1.5.jar:/home/longz/.m2/repository/org/springframework/cloud/spring-cloud-sleuth-instrumentation/3.1.5/spring-cloud-sleuth-instrumentation-3.1.5.jar:/home/longz/.m2/repository/org/springframework/cloud/spring-cloud-sleuth-api/3.1.5/spring-cloud-sleuth-api-3.1.5.jar:/home/longz/.m2/repository/org/aspectj/aspectjrt/1.9.7/aspectjrt-1.9.7.jar:/home/longz/.m2/repository/org/springframework/cloud/spring-cloud-sleuth-brave/3.1.5/spring-cloud-sleuth-brave-3.1.5.jar:/home/longz/.m2/repository/io/zipkin/brave/brave/5.13.9/brave-5.13.9.jar:/home/longz/.m2/repository/io/zipkin/brave/brave-context-slf4j/5.13.9/brave-context-slf4j-5.13.9.jar:/home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-messaging/5.13.9/brave-instrumentation-messaging-5.13.9.jar:/home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-rpc/5.13.9/brave-instrumentation-rpc-5.13.9.jar:/home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-spring-rabbit/5.13.9/brave-instrumentation-spring-rabbit-5.13.9.jar:/home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-kafka-clients/5.13.9/brave-instrumentation-kafka-clients-5.13.9.jar:/home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-kafka-streams/5.13.9/brave-instrumentation-kafka-streams-5.13.9.jar:/home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-httpclient/5.13.9/brave-instrumentation-httpclient-5.13.9.jar:/home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-http/5.13.9/brave-instrumentation-http-5.13.9.jar:/home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-httpasyncclient/5.13.9/brave-instrumentation-httpasyncclient-5.13.9.jar:/home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-jms/5.13.9/brave-instrumentation-jms-5.13.9.jar:/home/longz/.m2/repository/io/zipkin/brave/brave-instrumentation-mongodb/5.13.9/brave-instrumentation-mongodb-5.13.9.jar:/home/longz/.m2/repository/io/zipkin/aws/brave-propagation-aws/0.21.3/brave-propagation-aws-0.21.3.jar:/home/longz/.m2/repository/io/zipkin/reporter2/zipkin-reporter-metrics-micrometer/2.16.3/zipkin-reporter-metrics-micrometer-2.16.3.jar:/home/longz/.m2/repository/com/google/cloud/spring-cloud-gcp-starter-trace/3.4.2/spring-cloud-gcp-starter-trace-3.4.2.jar:/home/longz/.m2/repository/io/zipkin/gcp/zipkin-sender-stackdriver/1.0.4/zipkin-sender-stackdriver-1.0.4.jar:/home/longz/.m2/repository/io/zipkin/gcp/zipkin-translation-stackdriver/1.0.4/zipkin-translation-stackdriver-1.0.4.jar:/home/longz/.m2/repository/com/google/api/grpc/proto-google-cloud-trace-v2/2.8.0/proto-google-cloud-trace-v2-2.8.0.jar:/home/longz/.m2/repository/io/zipkin/reporter2/zipkin-reporter/2.16.3/zipkin-reporter-2.16.3.jar:/home/longz/.m2/repository/io/zipkin/zipkin2/zipkin/2.23.2/zipkin-2.23.2.jar:/home/longz/.m2/repository/com/google/api/grpc/grpc-google-cloud-trace-v2/2.8.0/grpc-google-cloud-trace-v2-2.8.0.jar:/home/longz/.m2/repository/io/grpc/grpc-context/1.51.1/grpc-context-1.51.1.jar:/home/longz/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/home/longz/.m2/repository/io/grpc/grpc-stub/1.51.1/grpc-stub-1.51.1.jar:/home/longz/.m2/repository/io/grpc/grpc-protobuf-lite/1.51.1/grpc-protobuf-lite-1.51.1.jar:/home/longz/.m2/repository/com/google/auto/value/auto-value/1.10.1/auto-value-1.10.1.jar:/home/longz/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/home/longz/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/longz/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/longz/.m2/repository/org/checkerframework/checker-qual/3.29.0/checker-qual-3.29.0.jar:/home/longz/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/home/longz/.m2/repository/io/zipkin/gcp/brave-propagation-stackdriver/1.0.4/brave-propagation-stackdriver-1.0.4.jar:/home/longz/.m2/repository/com/google/cloud/google-cloud-core-grpc/2.9.1/google-cloud-core-grpc-2.9.1.jar:/home/longz/.m2/repository/com/google/auth/google-auth-library-credentials/1.14.0/google-auth-library-credentials-1.14.0.jar:/home/longz/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/home/longz/.m2/repository/com/google/api/gax/2.21.0/gax-2.21.0.jar:/home/longz/.m2/repository/io/opencensus/opencensus-api/0.31.1/opencensus-api-0.31.1.jar:/home/longz/.m2/repository/com/google/api/gax-grpc/2.21.0/gax-grpc-2.21.0.jar:/home/longz/.m2/repository/io/grpc/grpc-alts/1.51.1/grpc-alts-1.51.1.jar:/home/longz/.m2/repository/io/grpc/grpc-auth/1.51.1/grpc-auth-1.51.1.jar:/home/longz/.m2/repository/io/grpc/grpc-protobuf/1.51.1/grpc-protobuf-1.51.1.jar:/home/longz/.m2/repository/io/grpc/grpc-netty-shaded/1.51.1/grpc-netty-shaded-1.51.1.jar:/home/longz/.m2/repository/io/grpc/grpc-googleapis/1.51.1/grpc-googleapis-1.51.1.jar:/home/longz/.m2/repository/com/google/api/api-common/2.4.0/api-common-2.4.0.jar:/home/longz/.m2/repository/io/grpc/grpc-api/1.51.1/grpc-api-1.51.1.jar:/home/longz/.m2/repository/com/google/http-client/google-http-client/1.42.3/google-http-client-1.42.3.jar:/home/longz/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/longz/.m2/repository/org/apache/httpcomponents/httpcore/4.4.15/httpcore-4.4.15.jar:/home/longz/.m2/repository/io/opencensus/opencensus-contrib-http-util/0.31.1/opencensus-contrib-http-util-0.31.1.jar:/home/longz/.m2/repository/io/zipkin/reporter2/zipkin-reporter-brave/2.16.3/zipkin-reporter-brave-2.16.3.jar:/home/longz/.m2/repository/com/google/cloud/spring-cloud-gcp-starter-logging/3.4.2/spring-cloud-gcp-starter-logging-3.4.2.jar:/home/longz/.m2/repository/com/google/cloud/spring-cloud-gcp-logging/3.4.2/spring-cloud-gcp-logging-3.4.2.jar:/home/longz/.m2/repository/ch/qos/logback/contrib/logback-json-classic/0.1.5/logback-json-classic-0.1.5.jar:/home/longz/.m2/repository/ch/qos/logback/logback-classic/1.2.11/logback-classic-1.2.11.jar:/home/longz/.m2/repository/ch/qos/logback/contrib/logback-json-core/0.1.5/logback-json-core-0.1.5.jar:/home/longz/.m2/repository/com/google/cloud/google-cloud-logging-logback/0.130.0-alpha/google-cloud-logging-logback-0.130.0-alpha.jar:/home/longz/.m2/repository/ch/qos/logback/logback-core/1.2.11/logback-core-1.2.11.jar:/home/longz/.m2/repository/com/google/cloud/google-cloud-logging/3.14.1/google-cloud-logging-3.14.1.jar:/home/longz/.m2/repository/com/google/code/gson/gson/2.9.1/gson-2.9.1.jar:/home/longz/.m2/repository/com/google/api/grpc/proto-google-cloud-logging-v2/0.103.1/proto-google-cloud-logging-v2-0.103.1.jar:/home/longz/.m2/repository/io/grpc/grpc-grpclb/1.51.1/grpc-grpclb-1.51.1.jar:/home/longz/.m2/repository/org/conscrypt/conscrypt-openjdk-uber/2.5.2/conscrypt-openjdk-uber-2.5.2.jar:/home/longz/.m2/repository/io/grpc/grpc-xds/1.51.1/grpc-xds-1.51.1.jar:/home/longz/.m2/repository/io/opencensus/opencensus-proto/0.2.0/opencensus-proto-0.2.0.jar:/home/longz/.m2/repository/io/grpc/grpc-services/1.51.1/grpc-services-1.51.1.jar:/home/longz/.m2/repository/com/google/re2j/re2j/1.6/re2j-1.6.jar:/home/longz/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/longz/.m2/repository/commons-codec/commons-codec/1.15/commons-codec-1.15.jar:/home/longz/.m2/repository/io/grpc/grpc-core/1.51.1/grpc-core-1.51.1.jar:/home/longz/.m2/repository/com/google/android/annotations/4.1.1.4/annotations-4.1.1.4.jar:/home/longz/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.22/animal-sniffer-annotations-1.22.jar:/home/longz/.m2/repository/io/perfmark/perfmark-api/0.26.0/perfmark-api-0.26.0.jar:/home/longz/.m2/repository/org/jspecify/jspecify/0.2.0/jspecify-0.2.0.jar
+[DEBUG] Application argument(s): 
+[DEBUG] Environment variable(s): 
+13:59:13,852 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+13:59:13,852 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/home/longz/microservice-trace/spring/trace_demo/trace-service-one/target/classes/logback.xml]
+13:59:13,923 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+13:59:13,923 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+13:59:13,928 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+13:59:13,934 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+13:59:13,972 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [com.google.cloud.spring.logging.LoggingAppender]
+13:59:14,079 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STACKDRIVER]
+13:59:14,857 |-WARN in Logger[io.grpc.netty.shaded.io.netty.util.internal.logging.InternalLoggerFactory] - No appenders present in context [default] for logger [io.grpc.netty.shaded.io.netty.util.internal.logging.InternalLoggerFactory].
+13:59:16,177 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+13:59:16,178 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+13:59:16,178 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STACKDRIVER] to Logger[ROOT]
+13:59:16,178 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+13:59:16,179 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@44bd4b0a - Registering current configuration as safe fallback point
+
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.6)
+
+2023-02-17 13:59:16.961  INFO cs-585904490940-default --- [           main] c.e.d.DemoApplication                    : Starting DemoApplication using Java 17.0.6 on cs-585904490940-default with PID 866 (/home/longz/microservice-trace/spring/trace_demo/trace-service-one/target/classes started by longz in /home/longz/microservice-trace/spring/trace_demo/trace-service-one)
+2023-02-17 13:59:16.972 DEBUG cs-585904490940-default --- [           main] c.e.d.DemoApplication                    : Running with Spring Boot v2.7.6, Spring v5.3.24
+2023-02-17 13:59:16.974  INFO cs-585904490940-default --- [           main] c.e.d.DemoApplication                    : No active profile set, falling back to 1 default profile: "default"
+2023-02-17 13:59:18.292  INFO cs-585904490940-default --- [           main] o.s.c.c.s.GenericScope                   : BeanFactory id=e16e05a8-3c43-3c52-82c4-52c21e3c6930
+2023-02-17 13:59:19.149  INFO cs-585904490940-default --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2023/02/17 13:59:19.159 INFO  - [SLF4J & Logback] Initializing ProtocolHandler ["http-nio-8080"]
+2023/02/17 13:59:19.467 INFO  - [SLF4J & Logback] Starting service [Tomcat]
+2023/02/17 13:59:19.469 INFO  - [SLF4J & Logback] Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023/02/17 13:59:19.605 INFO  - [SLF4J & Logback] Initializing Spring embedded WebApplicationContext
+2023-02-17 13:59:19.606  INFO cs-585904490940-default --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2556 ms
+2023-02-17 13:59:19.824  INFO cs-585904490940-default --- [           main] c.g.c.s.a.c.GcpContextAutoConfiguration  : The default project ID is longz-prem-bd
+2023-02-17 13:59:19.828  INFO cs-585904490940-default --- [           main] c.g.c.s.c.DefaultCredentialsProvider     : Default credentials provider for Google Compute Engine.
+2023-02-17 13:59:19.828  INFO cs-585904490940-default --- [           main] c.g.c.s.c.DefaultCredentialsProvider     : Scopes in use by default credentials: [https://www.googleapis.com/auth/pubsub, https://www.googleapis.com/auth/spanner.admin, https://www.googleapis.com/auth/spanner.data, https://www.googleapis.com/auth/datastore, https://www.googleapis.com/auth/sqlservice.admin, https://www.googleapis.com/auth/devstorage.read_only, https://www.googleapis.com/auth/devstorage.read_write, https://www.googleapis.com/auth/cloudruntimeconfig, https://www.googleapis.com/auth/trace.append, https://www.googleapis.com/auth/cloud-platform, https://www.googleapis.com/auth/cloud-vision, https://www.googleapis.com/auth/bigquery, https://www.googleapis.com/auth/monitoring.write]
+2023-02-17 13:59:20.167  WARN cs-585904490940-default --- [           main] .s.a.t.StackdriverTraceAutoConfiguration : Error when performing Stackdriver AsyncReporter health check.
+io.grpc.StatusRuntimeException: PERMISSION_DENIED: Your application has authenticated using end user credentials from the Google Cloud SDK or Google Cloud Shell which are not supported by the cloudtrace.googleapis.com. We recommend configuring the billing/quota_project setting in gcloud or using a service account through the auth/impersonate_service_account setting. For more information about service accounts and how to use them in your application, see https://cloud.google.com/docs/authentication/. If you are getting this error with curl or similar tools, you may need to specify 'X-Goog-User-Project' HTTP header for quota and billing purposes. For more information regarding 'X-Goog-User-Project' header, please check https://cloud.google.com/apis/docs/system-parameters.
+	at io.grpc.Status.asRuntimeException(Status.java:539)
+	at zipkin2.reporter.stackdriver.internal.AwaitableUnaryClientCallListener.onClose(AwaitableUnaryClientCallListener.java:100)
+	at io.grpc.internal.DelayedClientCall$DelayedListener$3.run(DelayedClientCall.java:471)
+	at io.grpc.internal.DelayedClientCall$DelayedListener.delayOrExecute(DelayedClientCall.java:435)
+	at io.grpc.internal.DelayedClientCall$DelayedListener.onClose(DelayedClientCall.java:468)
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:563)
+	at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:70)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInternal(ClientCallImpl.java:744)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:723)
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:133)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023/02/17 13:59:21.326 INFO  - [SLF4J & Logback] Starting ProtocolHandler ["http-nio-8080"]
+2023-02-17 13:59:21.346  INFO cs-585904490940-default --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-17 13:59:21.373  INFO cs-585904490940-default --- [           main] c.e.d.DemoApplication                    : Started DemoApplication in 7.636 seconds (JVM running for 9.606)
