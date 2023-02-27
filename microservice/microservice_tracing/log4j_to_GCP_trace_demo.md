@@ -48,6 +48,15 @@ trace: "projects/demo-project/traces/63f3305be7412a922b2709f3f0c71eb8"
 
 ### Overview
 
+
+There are 2 ways to correlate Spring Boot logs with Cloud trace by using log4j2. 
+
+1. Use Log4j to slf4j adapter
+
+Spring currently supports Spring boots logs and Cloud Trace correlation with logback. Log4j is not supported. 
+
+3. Output logs in JSON format to Cloud Logging
+
 Log4j2 provides a default JSON layout for user to output the logs in JSON format. However the default JSON layout doesn't fit the format of Cloud Logging. Specifically, in order to implement Cloud logging and Cloud trace correlation, the log much have a `trace` field in the top level with the value in format `projects/PROJECT_ID/traces/TRACE_ID`. Though user can add custom fields into the JSON layout, those fields fall into the `jsonPayload` section rather than the top section, see example below:
 
 ```
@@ -246,3 +255,5 @@ import brave.Tracer;
   }
   
 ```
+
+
