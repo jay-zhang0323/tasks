@@ -49,8 +49,9 @@ public class CustomGCPLayout extends AbstractStringLayout {
         putIfNotNull("logger", event.getLoggerFqcn(), map);
         putIfNotNull("message", event.getMessage().getFormattedMessage(), map);
         putIfNotNull("exception", getThrowableAsString(event.getThrownProxy()), map);
-        putIfNotNull("trace", event.getContextData().getValue("X-B3-TraceId"), map);
-        putIfNotNull("spanId", event.getContextData().getValue("X-B3-SpanId"), map);
+        putIfNotNull("logging.googleapis.com/trace", event.getContextData().getValue("X-B3-TraceId"), map);
+        putIfNotNull("logging.googleapis.com/spanId", event.getContextData().getValue("X-B3-SpanId"), map);
+
 
 
         try {
