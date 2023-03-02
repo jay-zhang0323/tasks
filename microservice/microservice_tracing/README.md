@@ -40,3 +40,7 @@ Appigxや、kafukaとか、どうやって連動させる？（GCP外のサー�
 OpenTelemetoryって何？
 OpenSensusって何？
 ![image](https://user-images.githubusercontent.com/72186199/213107039-a1c9cefd-a2fc-4a91-a2b2-28cfe03bde09.png)
+
+# Reference
+Brave library : https://github.com/openzipkin/brave/blob/master/brave/README.md
+https://docs.spring.io/spring-cloud-sleuth/docs/current-SNAPSHOT/reference/html/project-features.html
